@@ -6,7 +6,7 @@
 
   .space{
     background-image: url("../img/space.jpg");
-    width: 400px;
+    width: 100%;
     min-height: 1500px;
     background-position: center;
     background-repeat: no-repeat;
