@@ -1,4 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+
+  }
+
+  .space{
+    background-image: url("../img/space.jpg");
+    width: 100%;
+    min-height: 1500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
   }
