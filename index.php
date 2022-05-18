@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+
+    <title>HoofdpaginaS</title>
+
 </head>
 <body class="space" >
     <?php
     include_once "nav.php";
     ?>
+
 
     <div>
         
@@ -33,6 +36,7 @@
         </form>
     </div>
   
+
 
     
 </body>
