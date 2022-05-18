@@ -10,10 +10,11 @@
 </head>
 <body>
     <nav>
+        
         <a href="index.php">home</a>
         <a href="inloggen.php">login</a>
         <a href="reserveren.php">reserveren</a>
-        <a href="about.php">about us</a>     
+        <a href="about.php">about us</a>   
     </nav>
   
 
