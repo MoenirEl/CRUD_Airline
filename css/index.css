@@ -27,18 +27,6 @@
     height: 100px;
   }
   	
-  .Van {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: -500px;
-    top: 100px;
-    margin: 0 auto;
-    height: 300px; 
-    width: 200px;
-    background-color: #f1f1f1;
-  }
 
 input {
     display: flex;
@@ -60,3 +48,56 @@ select {
     margin-bottom: 10px;
     margin-top: 10px;
   }
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+  }
+   .routeblok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:25%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: blue;
+  } 
+  .reisvan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    height: 400px; 
+    width: 25%;
+    background-color: orange;
+  }
+
+   .reisnaar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: green;
+  } 
+  .routeblok form{
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+  }
+  .reisvan form{
+    position: relative;
+    right: 100px;
+    bottom: 100px;
+  }
+  .reisnaar form{
+    position: relative;
+    right: 100px;
+    bottom: 100px;
+}
