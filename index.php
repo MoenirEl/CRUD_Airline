@@ -65,36 +65,7 @@
         </div>
 
 
-    <div>
-        
-    </div>
-    <div class="Van" >
-        <form action="#">
-            <label for="van">Van</label>
-            <select name="Van" id="van" >
-                <option value="aarde">Aarde</option>
-                <option value="Mercurius">Mercurius</option>
-                <option value="Venus">Venus</option>
-                <option value="Mars">Mars</option>
-                <option value="Jupiter">Jupiter</option>
-                <option value="Saturnus">Saturnus</option>
-                <option value="Uranus">Uranus</option>
-                <option value="Neptunus">Neptunus</option>
-            </select>
-            <input type="submit" value="Submit" />
-        </form>
-    </div>
-  
-
-
-    <div>
-        
-    </div>
-
-
-
 </body>
-
 </html>
     <script src="https://cdn.jsdelivr.net/npm/moment@latest/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@latest/min/moment-with-locales.min.js"></script>

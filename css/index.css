@@ -10,7 +10,7 @@
   }
 
   .space{
-    background-image: url("../img/space.jpg");
+    background-clip: url("../img/space.jpg");
     width: 100%;
     min-height: 1500px;
     background-position: center;
@@ -100,4 +100,7 @@ select {
     position: relative;
     right: 100px;
     bottom: 100px;
+    width: 40px;
 }
+
+
