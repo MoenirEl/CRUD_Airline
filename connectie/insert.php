@@ -13,7 +13,7 @@ $stmt->bindParam(":naam", $_POST['naam']);
 $stmt->bindParam(":prijs", $_POST['prijs']);
 $stmt->bindParam(":beschrijving", $_POST['beschrijving']);
 $stmt->execute();
-header("Location: ../mainpages/admin.php")
+header("Location: ../admin.php")
 
 ;}
 ?>
@@ -24,5 +24,5 @@ header("Location: ../mainpages/admin.php")
     beschrijving<input type="text" name="beschrijving" id=""><br/>
     
     <input type="submit" name="toevoegen" value="submit">
-    <a href="../mainpages/admin.php">back</a>
+    <a href="../admin.php">back</a>
 </form>
