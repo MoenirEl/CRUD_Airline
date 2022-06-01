@@ -12,9 +12,24 @@
     <nav>
         
         <a href="index.php">home</a>
-        <a href="inloggen.php">login</a>
+        <?php 
+            session_start();
+            if (isset($_SESSION['name'])) {
+                echo '<a href="admin.php">admin page</a>';
+            } else {
+                echo '<a href="inloggen.php">login</a>';
+            }
+        ?>
         <a href="info.php">info</a>
-        <a href="about.php">about us</a>   
+        <a href="about.php">about us</a> 
+        <?php 
+            session_start();
+            if (isset($_SESSION['name'])) {
+                echo '<a href="admin.php">admin page</a>';
+            } else {
+                echo '<a href="inloggen.php">login</a>';
+            }
+        ?>
     </nav>
   
 
