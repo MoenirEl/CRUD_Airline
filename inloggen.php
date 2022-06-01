@@ -17,6 +17,8 @@
     <input type="checkbox" id="flip">
     <div class="cover">
       <div class="front">
+
+
         <img src="img/login-foto.jpg" alt="">
         <div class="text">
           <span class="text-1">Every flight is a <br> new adventure</span>
