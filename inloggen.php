@@ -17,6 +17,11 @@
     <input type="checkbox" id="flip">
     <div class="cover">
       <div class="front">
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 2dae14fd135c951109010877b35660eb2b783ea5
         <img src="img/login-foto.jpg" alt="">
         <div class="text">
           <span class="text-1">Every flight is a <br> new adventure</span>
@@ -25,6 +30,10 @@
       </div>
       <div class="back">
         <img class="backImg" src="img/login-foto.jpg" alt="">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2dae14fd135c951109010877b35660eb2b783ea5
         <div class="text">
           <span class="text-1">Complete miles of journey <br> with one step</span>
           <span class="text-2">Let's get started</span>
