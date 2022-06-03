@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
 
+
     <link rel="stylesheet" href="./dist/tavo-calendar.css" />
     <title>Document</title>
+
 
 
     <title>HoofdpaginaS</title>
@@ -21,6 +23,7 @@
     <?php
     include_once "nav.php";
     ?>
+
 
 
     <div class="container">
@@ -68,6 +71,7 @@
             </form>
         </div>
 
+
     <div>
         
     </div>
@@ -88,8 +92,6 @@
         </form>
     </div>
   
-
-
 
 
 </body>
