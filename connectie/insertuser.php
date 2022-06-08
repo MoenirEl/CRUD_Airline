@@ -1,22 +1,16 @@
 <?php
-require_once 'pdo.php';
+    require_once 'pdo.php';
 
+    if(isset($_POST['submitknop'])) {
 
+        $stmt = $connect->prepare("INSERT INTO users (username, password, mail) VALUES (:username, :password, :mail)");
+        $stmt->bindParam('username', $_POST['username']);
+        $stmt->bindParam('password', $_POST['password']);
+        $stmt->bindParam('mail', $_POST['mail']);
+        $stmt->execute();
 
-$stmt = $conn->prepare("INSERT INTO producten (naam, voorraad, prijs, img) VALUES (:naam, :voorraad, :prijs, :img)");
-
-$stmt->execute(array(':naam' => $_POST['naam'], ':voorraad' => $_POST['voorraad'], ':prijs' => $_POST['prijs'], ':img' => $_POST['img']));
-
-
-
-header('Location: admin.php');
+        header("Location: ../inloggen.php?message=gelukt");
+    } else {
+        header("Location: ../inloggen.php");
+    }
 ?>
-
-<form action="" method="post">
-    username: <input type="text" name="naam" id=""value=" <?php echo $data [':username']; ?>"><br />
-    password: <input type="text" name="prijs" id="" value="<?php echo $data [':password']; ?> " ><br />
-    e-mail: <input type="text" name="beschrijving" id=""value=" <?php echo $data [':mail']; ?>"><br />
-
-    <input type="submit" name="aanpassen" value="submit">
-    <a href="../admin.php">back</a>
-</form>

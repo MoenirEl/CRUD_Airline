@@ -9,7 +9,7 @@ $stmt->execute();
 $result = $stmt->fetch();
 
 if($result == 0){
-    header("Location: ../js/inlogalert.js");
+    header("Location: incorrect.php");
 }
 
 if(count($result) > 0){

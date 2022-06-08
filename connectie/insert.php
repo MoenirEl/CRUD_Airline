@@ -5,13 +5,12 @@
  $stmt->execute(['ID'=>$_GET['id']]);
  $data = $stmt->fetch();
  
- if(isset($_POST["aanpassen"])){ 
-     $sql = "UPDATE planeten SET 
-     naam = :naam,
-     prijs = :prijs,
-     beschrijving =:beschrijving 
-     WHERE ID = :ID
-     ";
+ if(isset($_POST["toevoegen"])){ 
+    $sql = "INSERT INTO producten
+    (naam, beschrijving, prijs )
+     VALUES 
+    (:naam, :beschrijving, :prijs)";
+
  
  $stmt = $connect->prepare($sql);
  $stmt->bindParam(":naam", $_POST['naam']);
@@ -21,6 +20,7 @@
  $stmt->execute();
  $stmt->debugDumpParams();
  header("Location: ../mainpages/admin.php");
+ }
 ?>
 
 <form action="" method="post">
