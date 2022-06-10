@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <link rel="stylesheet" href="./dist/tavo-calendar.css" />
     <title>Document</title>
@@ -120,6 +121,9 @@
         
     </div>
 
+    <?php
+    include_once "includes/footer.php";
+    ?>
 
 
 </body>
