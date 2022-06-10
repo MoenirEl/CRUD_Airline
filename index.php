@@ -15,6 +15,12 @@
 
 
 
+
+    <link rel="stylesheet" href="./dist/tavo-calendar.css" />
+    <title>Document</title>
+
+
+
     <title>HoofdpaginaS</title>
 
 </head>
@@ -122,10 +128,10 @@
     <div>
         
     </div>
-
     <?php
     include_once "includes/footer.php";
     ?>
+
 
 
 </body>
