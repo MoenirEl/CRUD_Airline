@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .ruimte {
   display: flex;
   justify-content: center;
@@ -51,3 +56,21 @@
   font-size: 16px;
   line-height: 26px;
 }
+
+.space {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  width: 100%;
+  height: auto;
+  background-color: black;
+
+  }
