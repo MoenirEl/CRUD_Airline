@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="css/footer.css">
 
 
-    <link rel="stylesheet" href="./dist/tavo-calendar.css" />
-    <title>Document</title>
-
-
-
 
     <link rel="stylesheet" href="./dist/tavo-calendar.css" />
     <title>Document</title>
+
+
+
+
+
+    <link rel="stylesheet" href="./dist/tavo-calendar.css" />
 
 
 
@@ -25,11 +26,11 @@
 
 </head>
 
-<body class="space">
+<body>
+    <video src="vid/background.mp4" muted loop autoplay id="vidSpace"></video>
     <?php
     include_once "nav.php";
     ?>
-
 
 
     <div class="container">
@@ -41,7 +42,6 @@
                     <option value="Mercurius">Enkele reis</option>
                     <option value="Venus">Meerdere planten</option>
                 </select>
-                
             </form>
         </div>
         <div class="reisvan">
@@ -57,7 +57,7 @@
                     <option value="Uranus">Uranus</option>
                     <option value="Neptunus">Neptunus</option>
                 </select>
-                
+
             </form>
         </div>
         <div class="reisnaar">
@@ -76,6 +76,7 @@
                 <input type="submit" value="Submit" />
             </form>
         </div>
+
 
 
     <div>
@@ -134,9 +135,17 @@
 
 
 
+
+        </div>
+
+           <?php
+        include_once "includes/footer.php";
+        ?> 
+
+<!--<button id="Off" onclick="myFunction()">Pause</button>
+</div>-->
+
 </body>
 
 </html>
-    <script src="https://cdn.jsdelivr.net/npm/moment@latest/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/moment@latest/min/moment-with-locales.min.js"></script>
-    <script src="./dist/tavo-calendar.js"></script>
+<script src="main.js"></script>
