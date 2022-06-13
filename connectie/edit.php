@@ -33,5 +33,5 @@ header("Location: ../mainpages/admin.php")
     beschrijving<input type="text" name="beschrijving" id=""value=" <?php echo $data ['beschrijving']; ?>"><br />
 
     <input type="submit" name="aanpassen" value="submit">
-    <a href="../mainpages/admin.php">back</a>
+    <a href="../admin.php">back</a>
 </form>
