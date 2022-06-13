@@ -16,7 +16,7 @@
 
     <p>dit is de admin page.</p>
     <?php
-require_once "../connectie/pdo.php";
+require_once "connectie/pdo.php";
 
 $sql = "SELECT * FROM planeten";
 $stmt = $connect->prepare($sql);
@@ -36,16 +36,16 @@ $result = $stmt->fetchAll();
             <td><?php echo $re["prijs"]; ?></td>
             <td><?php echo $re["beschrijving"]; ?></td>
             <td>
-                <a href="../connectie/edit.php?id=<?php echo $re["ID"]; ?>">edit  </a>
-                <a href="../connectie/delete.php?id=<?php echo $re["ID"]; ?>">delete  </a>
+                <a href="connectie/edit.php?id=<?php echo $re["ID"]; ?>">edit  </a>
+                <a href="connectie/delete.php?id=<?php echo $re["ID"]; ?>">delete  </a>
             </td>
         </tr>
 
     <?php
     }
     ?>
-    <a href="../connectie/insert.php?id=<?php echo $re["ID"]; ?>">insert  </a>
-    <a href="../mainpages/index.php">home</a>
+    <a href="connectie/insert.php?id=<?php echo $re["ID"]; ?>">insert  </a>
+    <a href="../CRUD_Space/index.php">home</a>
 </table>
   
 </body>

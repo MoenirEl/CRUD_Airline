@@ -8,7 +8,15 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
+
     <link rel="stylesheet" href="./dist/tavo-calendar.css" />
+
+
+
+
+
+    <link rel="stylesheet" href="./dist/tavo-calendar.css" />
+
 
 
     <title>HoofdpaginaS</title>
@@ -64,6 +72,75 @@
                 <input type="submit" value="Submit" />
             </form>
         </div>
+
+
+
+
+        </div>
+
+           <?php
+        include_once "includes/footer.php";
+        ?> 
+
+
+
+    <div>
+        
+    </div>
+    <div class="Van" >
+        <form action="#">
+            <label for="van">Van</label>
+            <select name="Van" id="van" >
+                <option value="aarde">Aarde</option>
+                <option value="Mercurius">Mercurius</option>
+                <option value="Venus">Venus</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturnus">Saturnus</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptunus">Neptunus</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+  
+
+
+</body>
+
+
+    <div>
+        
+    </div>
+    <div class="Van" >
+        <form action="#">
+            <label for="van">Van</label>
+            <select name="Van" id="van" >
+                <option value="aarde">Aarde</option>
+                <option value="Mercurius">Mercurius</option>
+                <option value="Venus">Venus</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturnus">Saturnus</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptunus">Neptunus</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+  
+
+
+    <div>
+        
+    </div>
+    <?php
+    include_once "includes/footer.php";
+    ?>
+
+
+<!--<button id="Off" onclick="myFunction()">Pause</button>
+</div>-->
 
 
 
