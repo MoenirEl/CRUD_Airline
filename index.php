@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
 
-
-
     <link rel="stylesheet" href="./dist/tavo-calendar.css" />
-    <title>Document</title>
 
 
 
@@ -31,7 +28,6 @@
     <?php
     include_once "nav.php";
     ?>
-
 
     <div class="container">
         <div class="routeblok">
@@ -76,6 +72,15 @@
                 <input type="submit" value="Submit" />
             </form>
         </div>
+
+
+
+
+        </div>
+
+           <?php
+        include_once "includes/footer.php";
+        ?> 
 
 
 
@@ -133,6 +138,9 @@
     include_once "includes/footer.php";
     ?>
 
+
+<!--<button id="Off" onclick="myFunction()">Pause</button>
+</div>-->
 
 
 
