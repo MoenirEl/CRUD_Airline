@@ -1,7 +1,9 @@
+
 *{
   margin: 0;
   padding: 0;
 }
+
 
 .ruimte {
   display: flex;
@@ -57,6 +59,7 @@
   line-height: 26px;
 }
 
+
 .space {
   width: 100%;
   min-height: 100vh;
@@ -74,3 +77,4 @@
   background-color: black;
 
   }
+

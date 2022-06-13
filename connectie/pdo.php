@@ -20,7 +20,7 @@
     try
     {
         $connect = new PDO($dsn, $user, $pass, $opt);
-        echo "verbinding is gemaakt.";
+        // echo "verbinding is gemaakt.";
     }
     catch(PDOException $e)
     {
