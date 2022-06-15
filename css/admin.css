@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    position: relative;
+    
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px;
+    
+}
+
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(236, 241, 243);
+
+}
+
+th {
+    background-color: black;
+    color: white;
+    border-radius: 25% 25% 0% 0%;
+    
+}
+
+.tablebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+
+}
+
+.bigbox {
+    width: 1000px;
+}
+
+.kleinebox {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    background-color: black;
+}
+
+a:link,
+a:visited {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.orange:hover {
+    background-color: orange;
+    color: blue;
+}
+
+.red:hover {
+    background-color: red;
+    color: black;
+}
+
+.green:hover {
+    background-color: green;
+    color: whitesmoke;
+}
+
+.blue:hover {
+    background-color: blue;
+    color: greenyellow;
+}
+
+.blue,
+.red,
+.orange,
+.green {
+    border: 2px;
+    border-style: solid;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.red {
+    border-color: red;
+}
+
+.orange {
+    border-color: orange;
+}
+
+.green {
+    border-color: green;
+}
+
+.sky {
+    background-image: url("../img/space.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1200px;
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    table {
+        height: 300px;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+
+    .kleinebox {
+        position: relative;
+        top: 530px;
+        left: 70px;
+        width: 0%;
+
+    }
+}
