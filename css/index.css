@@ -1,41 +1,37 @@
 * {
-
   margin: 0;
   padding: 0;
-
-
-  body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
-
-  .space{
-    background-clip: url("../img/space.jpg");
-    width: 100%;
-    min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-
-  }
-  .headblok{
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction: column;
-    width: 100%;
-    height: 100px;
-  }
-
+}
 
 
 body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1500px;
+  height: auto;
+}
+.space {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.headblok {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1000px;
 }
 
 #vidSpace {
@@ -74,6 +70,12 @@ label {
 select {
   margin-bottom: 10px;
   margin-top: 10px;
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+
 }
 
 .container {
@@ -81,9 +83,22 @@ select {
   align-items: center;
   justify-content: center;
   position: relative;
+  top: 100px;
   width: 100%;
-  height: auto;
-  background-color: black;
+  height: 1000px;
+
+}
+
+.uniblok {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  bottom: 50px;
+  height: 500px;
+  width: 50%;
+  background-color: rgb(77, 120, 134);
 }
 
 .routeblok {
@@ -91,13 +106,10 @@ select {
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 100px;
-  top: 100px;
   width: 25%;
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
-  background-color: blue;
-  
+  background-color: plum;
 }
 
 .reisvan {
@@ -106,9 +118,9 @@ select {
   justify-content: center;
   position: relative;
   margin: 0 auto;
-  height: 400px;
+  height: 300px;
   width: 25%;
-  background-color: orange;
+  background-color: purple;
 }
 
 .reisnaar {
@@ -118,28 +130,28 @@ select {
   position: relative;
   margin: 0 auto;
   width: 25%;
-  height: 400px;
-  background-color: green;
+  height: 300px;
+  background-color: red;
 }
 
 .routeblok form {
   position: relative;
-  left: 100px;
-  bottom: 100px;
 }
 
 .reisvan form {
   position: relative;
-  right: 100px;
-  bottom: 100px;
 }
 
 .reisnaar form {
   position: relative;
-  right: 100px;
-  bottom: 100px;
-  width: 40px;
-    
+
+}
+
+#footer {
+  position: relative;
+  top: 100px;
+}
+
 
     }
 
@@ -159,3 +171,29 @@ select {
   background: #ddd;
   color: black;
 } */
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+select::-ms-expand {
+  display: none;
+}
+select {
+  outline: none;
+
+  } */
