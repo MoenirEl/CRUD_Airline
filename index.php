@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
+
+
     <link rel="stylesheet" href="./dist/tavo-calendar.css" />
     <title>HoofdpaginaS</title>
 </head>
@@ -67,30 +69,14 @@
         </div>
 
 
-
-        </div>
-
-
-
-
-
-  
-
-
+</div>
+<div id="footer" >
 
     <?php
-    include_once "includes/footer.php";
-    ?>
+include_once "includes/footer.php";
+?>
+</div>
 
-
-<!--<button id="Off" onclick="myFunction()">Pause</button>
-</div>-->
-
-
-
-
-
-           
 
 </body>
 

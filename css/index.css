@@ -1,38 +1,16 @@
 * {
-  margin: 0;
-  padding: 0;
-}
 
+    margin: 0;
+    padding: 0;
 
-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-}
-.space {
-  width: 100%;
-  min-height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-}
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+  }
 
-.headblok {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
-  height: 100px;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 1000px;
-}
 
 #vidSpace {
   position: fixed;
@@ -70,12 +48,6 @@ label {
 select {
   margin-bottom: 10px;
   margin-top: 10px;
-  width: 100%;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #f1f1f1;
-
 }
 
 .container {
@@ -86,7 +58,7 @@ select {
   top: 100px;
   width: 100%;
   height: 1000px;
-
+ 
 }
 
 .uniblok {
@@ -153,7 +125,7 @@ select {
 }
 
 
-    }
+    
 
 
 
