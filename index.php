@@ -34,7 +34,7 @@
                 </form>
             </div>
             <div class="reisvan">
-                <form action="#">
+                <form id="keuze1" action="#">
                     <label for="van">Vertrek van</label>
                     <select name="Van" id="van">
                         <option value="1">Aarde</option>
@@ -86,8 +86,8 @@ include_once "includes/footer.php";
 ?>
 </div>
 
-
+<script src="js/index.js"></script>
 </body>
 
 </html>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
