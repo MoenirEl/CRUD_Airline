@@ -66,16 +66,31 @@
             </div>
         </div>
 
-    </div>
-    <div id="footer">
 
-        <?php
-        include_once "includes/footer.php";
-        ?>
-    </div>
 
-    <!--<button id="Off" onclick="myFunction()">Pause</button>
+        </div>
+
+
+
+
+
+  
+
+
+
+    <?php
+    include_once "includes/footer.php";
+    ?>
+
+
+<!--<button id="Off" onclick="myFunction()">Pause</button>
 </div>-->
+
+
+
+
+
+           
 
 </body>
 

@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 .space {
   width: 100%;
   min-height: 100vh;
@@ -12,7 +11,6 @@
   background-size: cover;
   color: white;
 }
-
 
 body {
   display: flex;
@@ -28,8 +26,6 @@ body {
   left: 0;
   bottom: 0;
 }
-
-
 
 input {
   display: flex;
