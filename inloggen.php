@@ -70,15 +70,15 @@
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
-                username: <input type="text" name="username" id="" required><br />
+                <input type="text" name="username" placeholder="Enter your username"required><br />
               </div>
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                password: <input type="text" name="password" id="" required><br />
+                <input type="text" name="password" placeholder="Enter your password" required><br />
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                e-mail: <input type="email" name="mail" id="" required><br />
+                 <input type="email" name="mail" placeholder="Enter your e-mail"required><br />
               </div>
               <div class="button input-box">
                 <input type="submit" value="Submit" name="submitknop">

@@ -1,111 +1,199 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
 
-  }
-  body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
 
-  .space{
-    background-clip: url("../img/space.jpg");
-    width: 100%;
-    min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.space {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
 
-  }
-  .headblok{
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction: column;
-    width: 100%;
-    height: 100px;
-  }
-  	
+.headblok {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1000px;
+}
+
+#vidSpace {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.headblok {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+}
+
 
 input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
 
 label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
 
 select {
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .container{
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-    width: 100%;
-    height: auto;
-    background-color: black;
-  }
-   .routeblok{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:25%;
-    height: 400px;
-    margin: 0 auto;
-    background-color: blue;
-  } 
-  .reisvan {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0 auto;
-    height: 400px; 
-    width: 25%;
-    background-color: orange;
-  }
-
-   .reisnaar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    height: 400px;
-    margin: 0 auto;
-    background-color: green;
-  } 
-  .routeblok form{
-    position: relative;
-    left: 100px;
-    bottom: 100px;
-  }
-  .reisvan form{
-    position: relative;
-    right: 100px;
-    bottom: 100px;
-  }
-  .reisnaar form{
-    position: relative;
-    right: 100px;
-    bottom: 100px;
-
-    width: 40px;
-}
-
-
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
 
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: 1000px;
+
+}
+
+.uniblok {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  bottom: 50px;
+  height: 500px;
+  width: 50%;
+  background-color: rgb(77, 120, 134);
+}
+
+.routeblok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 25%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: plum;
+}
+
+.reisvan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  height: 300px;
+  width: 25%;
+  background-color: purple;
+}
+
+.reisnaar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  width: 25%;
+  height: 300px;
+  background-color: red;
+}
+
+.routeblok form {
+  position: relative;
+}
+
+.reisvan form {
+  position: relative;
+}
+
+.reisnaar form {
+  position: relative;
+
+}
+
+#footer {
+  position: relative;
+  top: 100px;
+}
+
+
+    
+
+
+
+/* #Off {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#Off:hover {
+  background: #ddd;
+  color: black;
+} */
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+select::-ms-expand {
+  display: none;
+}
+select {
+  outline: none;
+
+  } */
