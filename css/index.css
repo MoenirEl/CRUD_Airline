@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-}
 
 .space {
   width: 100%;
@@ -19,13 +13,6 @@ body {
   color: white;
 }
 
-.headblok {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
-  height: 100px;
-}
 
 body {
   display: flex;
@@ -42,13 +29,6 @@ body {
   bottom: 0;
 }
 
-.headblok {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  height: 100px;
-}
 
 
 input {
@@ -144,7 +124,7 @@ select {
 
 .reisnaar form {
   position: relative;
-
+  top: 45px;
 }
 
 #footer {
@@ -152,7 +132,23 @@ select {
   top: 100px;
 }
 
-
+input[type=submit] {
+  border-radius: 25% 10%;
+  position: relative;
+  top: 20px;
+  left: 50px;
+  height: 75px;
+  width: 100px;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
 
 
 /* #Off {
