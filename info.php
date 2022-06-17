@@ -20,8 +20,6 @@
    <?php
     include_once "nav.php";
     ?>
-
-
     <div class="container">
         <div class="ruimte">
             <div class="wrapper">
