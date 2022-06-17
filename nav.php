@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav>
-        
+        <img  id="logo" src="img/YR.png" alt="">
         <a href="index.php">home</a>
         <?php 
             session_start();
