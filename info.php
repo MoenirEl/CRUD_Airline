@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/info.css">
-
     <link rel="stylesheet" href="./dist/tavo-calendar.css" />
     <title>Document</title>
 
@@ -19,13 +18,11 @@
     <title>HoofdpaginaS</title>
 
 </head>
-
+ 
 <body class="space">
-    <?php
+   <?php
     include_once "nav.php";
     ?>
-
-
     <div class="container">
         <div class="ruimte">
             <div class="wrapper">
