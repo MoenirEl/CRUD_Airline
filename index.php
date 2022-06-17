@@ -78,13 +78,7 @@
     ?>
 
 </div>
-<div id="footer" >
 
-
-    <?php
-include_once "includes/footer.php";
-?>
-</div>
 
 <script src="js/index.js"></script>
 </body>
