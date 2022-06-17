@@ -123,7 +123,8 @@ select {
 
 #footer {
   position: relative;
-  top: 400px;
+  top: 100%;
+  width: 100%;
 }
 
 
