@@ -24,7 +24,7 @@ $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
 ?>
-
+<?php foreach ($result as $re) { ?>
 
 <div class="tablebox">
         <div class="kleinebox">
@@ -37,8 +37,8 @@ $result = $stmt->fetchAll();
         <th>Prijs </th>
         <th>beschrijving </th>
     </tr>
-    <?php
-    foreach ($result as $re) { ?>
+    
+    
         <tr>
             <td><?php echo $re["naam"]; ?></td>
             <td><?php echo $re["prijs"]; ?></td>
