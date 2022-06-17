@@ -68,25 +68,20 @@
             </div>
 
 
-
-
-
-
-  
-
         </div>
 
 
-</div>
-<div id="footer" >
+    <div id="footer" >
 
+        <?php
+    include_once "includes/footer.php";
+    ?>
 
-    <?php
-include_once "includes/footer.php";
-?>
 </div>
+
 
 <script src="js/index.js"></script>
+
 </body>
 
 </html>
