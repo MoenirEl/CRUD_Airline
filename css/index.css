@@ -115,9 +115,13 @@ select {
 
 .reisnaar form {
   position: relative;
+
   top: -5px;
   right: 50px;
   color: aliceblue;
+
+  top: 45px;
+
 }
 
 
@@ -144,9 +148,11 @@ input[type=submit] {
   transition-duration: 0.4s;
   cursor: pointer;
   }
+
   input[type=submit]:hover{
     background-color: rgb(221, 196, 150);
   }
+
 
 /* #Off {
   width: 200px;
