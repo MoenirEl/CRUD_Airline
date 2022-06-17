@@ -64,6 +64,7 @@ select {
   position: relative;
   bottom: 100px;
   height: 400px;
+  left: 100px;
   width: 85%;
   background-color: #051937;
 }
@@ -113,12 +114,9 @@ select {
 
 .reisnaar form {
   position: relative;
-
   top: -5px;
   right: 50px;
   color: aliceblue;
-
-  top: 45px;
 
 }
 
