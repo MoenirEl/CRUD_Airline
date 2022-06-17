@@ -67,12 +67,6 @@
 
             </div>
 
-
-        </div>
-
-
-    <div id="footer" >
-
         <?php
     include_once "includes/footer.php";
     ?>
