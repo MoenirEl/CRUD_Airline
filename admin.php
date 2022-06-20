@@ -11,12 +11,12 @@
 </head>
 
 <body class="sky" >
-
-    <p>dit is de admin page.</p>
+    <a class="green" href="connectie/insert.php">insert  </a>
+    <a class="blue" href="../CRUD_Space/index.php">home</a>
     <?php
 require_once "connectie/pdo.php";
 
-$sql = "SELECT * FROM planeten";
+$sql = "SELECT * FROM reizen";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
@@ -24,33 +24,41 @@ $result = $stmt->fetchAll();
 
 
 <div class="tablebox">
-        <div class="kleinebox">
-<a class="green" href="connectie/insert.php">insert  </a>
-    <a class="blue" href="../CRUD_Space/index.php">home</a>
-
-<table>
-    <tr>
-        <th>planeetnaam </th>
-        <th>Prijs </th>
-        <th>beschrijving </th>
-    </tr>
-    
-    <?php foreach ($result as $re) { ?>
+    <table>
         <tr>
-            <td><?php echo $re["naam"]; ?></td>
-            <td><?php echo $re["prijs"]; ?></td>
-            <td><?php echo $re["beschrijving"]; ?></td>
-            <td>
-                <a  class="orange"href="connectie/edit.php?id=<?php echo $re["ID"]; ?>">edit  </a>
-                <a class="red" href="connectie/delete.php?id=<?php echo $re["ID"]; ?>">delete  </a>
-            </td>
+            <th>planeetnaam </th>
+            <th>kosten </th>
+            <th>startdatum </th>
+            <th>einddatum </th>
+            <th>manierVanReizen </th>
+            <th>klasse </th>
+            <th>Personen </th>
+            <th>reis </th>
+            <th>beschrijving </th>
         </tr>
+        
+        <?php foreach ($result as $re) { ?>
+            <tr>
+                <td><?php echo $re["naam"]; ?></td>
+                <td><?php echo $re["kosten"]; ?></td>
+                <td><?php echo $re["startDatum"]; ?></td>
+                <td><?php echo $re["eindDatum"]; ?></td>
+                <td><?php echo $re["manierVanReizen"]; ?></td>
+                <td><?php echo $re["klasse"]; ?></td>
+                <td><?php echo $re["Personen"]; ?></td>
+                <td><?php echo $re["reis"]; ?></td>
+                <td><?php echo $re["beschrijving"]; ?></td>
+                <td>
+                    <a class="orange"href="connectie/edit.php?id=<?php echo $re["reisID"]; ?>">edit  </a>
+                    <a class="red" href="connectie/delete.php?id=<?php echo $re["reisID"]; ?>">delete  </a>
+                </td>
+            </tr>
 
-    <?php
-    }
-    ?>
-    
-</table>
+        <?php
+        }
+        ?>
+    </table>
+</div>
   
 </body>
 </html>
