@@ -71,6 +71,7 @@
 
             </div>
 
+
         </div>
         <div class="onderblok">
         <div class="col-2">
@@ -92,6 +93,7 @@
         include_once "includes/footer.php";
         ?>
     </div>
+
     <script src="js/index.js"></script>
 
 </body>
