@@ -4,7 +4,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     column-gap: 30px;
-    background-color: rgba(255, 255, 255, 0.097);
+    background-color: rgba(53, 48, 48, 0.393);
     height: 100px;
     width: 100%;
     position: relative;
@@ -22,7 +22,8 @@ nav {
   #logo{
     width: 120px;
     position: relative;
-    right: 60%;
+    right: 50%;
+
   }
 
   

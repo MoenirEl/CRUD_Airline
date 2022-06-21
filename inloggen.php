@@ -93,9 +93,9 @@
 <?php 
   session_start();
   if (isset($_SESSION['name'])) {
-    echo "gelukt";
+    //echo "gelukt";
   } else {
-    echo 'niet gelukt';
+    //echo 'niet gelukt';
   }
   
 ?>

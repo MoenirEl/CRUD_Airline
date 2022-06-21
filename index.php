@@ -22,7 +22,11 @@
     ?>
 
     <div class="container">
+        <div class="textbox">
+            <h1  id="paarstext" >heb je ooit over nagedacht om naar de ruimte te gaan?</h1>
+        </div>
         <div class="uniblok">
+
             <div class="routeblok">
                 <form action="#">
                     <label for="van">reis</label>
@@ -69,19 +73,36 @@
 
 
         </div>
-    </div>
 
-    <div id="footer" >
+        <div class="onderblok">
+        <div class="col-2">
+            <div id="login">
+                <h1 class="login_welkom">Log in of register </h1>
+                <button onclick="document.location='inloggen.php'" class="button login buttonknop2"> log in of register</button>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="contact">
+                <h1 class="contact_welkom">Heb je vragen? contact ons!</h1>
+                <button onclick="document.location='contact.php'" class="button contactknop buttonknop">contact ons!</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="footer">
 
         <?php
-    include_once "includes/footer.php";
-    ?>
+        include_once "includes/footer.php";
+        ?>
+    </div>
 
-</div>
+    <script src="js/index.js"></script>
 
 
 <script src="js/index.js"></script>
 </body>
 
 </html>
+
 <script src="js/main.js"></script>
+
