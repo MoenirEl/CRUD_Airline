@@ -70,7 +70,10 @@
                 </form>
 
             </div>
-
+            <div class="container">
+  <div class="box center"></div>
+ <div class="box pause"></div> 
+</div>
 
         </div>
         <div class="onderblok">
