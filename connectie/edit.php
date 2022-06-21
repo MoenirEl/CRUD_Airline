@@ -31,7 +31,7 @@ $stmt->bindParam(":beschrijving", $_POST['beschrijving']);
 $stmt->bindParam(":ID", $data['ID']);
 $stmt->execute();
 $stmt->debugDumpParams();
-header("Location: ../mainpages/admin.php")
+header("Location: ../admin.php")
 ;
 
 }
