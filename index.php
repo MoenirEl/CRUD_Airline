@@ -70,9 +70,8 @@
                 </form>
 
             </div>
-
-
         </div>
+
         <div class="onderblok">
         <div class="col-2">
             <div id="login">
@@ -89,14 +88,12 @@
     </div>
     </div>
     <div id="footer">
+
         <?php
         include_once "includes/footer.php";
         ?>
     </div>
 
-    <script src="js/index.js"></script>
-
+<script src="js/index.js"></script>
 </body>
-
 </html>
-<script src="js/main.js"></script>

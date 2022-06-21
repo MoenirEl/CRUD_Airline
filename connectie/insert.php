@@ -11,31 +11,22 @@
   <?php
  require_once 'pdo.php';
 
- $stmt =$connect->prepare ("SELECT * FROM planeten WHERE ID = :ID");
- $stmt->execute(['ID'=>$_GET['id']]);
- $data = $stmt->fetch();
- 
- if(isset($_POST["toevoegen"])){
-    $sql = "INSERT INTO `planeten`( `naam`, `beschrijving`, `prijs`) 
-    VALUES 
-    ('[naam]','[beschrijving]','[prijs]')";
+if(isset($_POST["toevoegen"])){ 
+    $sql = "INSERT INTO reizen (kosten,beschrijving,naam) VALUES (:kosten,:beschrijving,:naam)";
 
-
- $stmt = $connect->prepare($sql);
- $stmt->bindParam(":naam", $_POST['naam']);
- $stmt->bindParam(":prijs", $_POST['prijs']);
- $stmt->bindParam(":beschrijving", $_POST['beschrijving']);
- $stmt->bindParam(":ID", $data['ID']);
- $stmt->execute();
- $stmt->debugDumpParams();
- header("Location: ../mainpages/admin.php");
- }
+$stmt = $connect->prepare($sql);
+$stmt->bindParam(":naam", $_POST['naam']);
+$stmt->bindParam(":kosten", $_POST['kosten']);
+$stmt->bindParam(":beschrijving", $_POST['beschrijving']);
+$stmt->execute();
+header("Location: ../admin.php");
+}
 ?>
 
-<form action="" method="post">
-    naam<input type="text" name="naam" id=""value=" <?php echo $data ['naam']; ?>"><br />
-    Prijs<input type="text" name="prijs" id="" value="<?php echo $data ['prijs']; ?> " ><br />
-    beschrijving<input type="text" name="beschrijving" id=""value=" <?php echo $data ['beschrijving']; ?>"><br />
+<form action="" method= "post">
+    naam<input type="text" name="naam" id=""><br/>
+    kosten<input type="text" name="kosten" id=""><br/>
+    beschrijving<input type="text" name="beschrijving" id=""><br/>
 
     <input type="submit" name="toevoegen" value="submit">
     <a href="../admin.php">back</a>
