@@ -11,7 +11,6 @@
   <?php
  require_once 'pdo.php';
 
-
 if(isset($_POST["toevoegen"])){ 
     $sql = "INSERT INTO reizen (kosten,beschrijving,naam) VALUES (:kosten,:beschrijving,:naam)";
 
@@ -28,7 +27,6 @@ header("Location: ../admin.php");
     naam<input type="text" name="naam" id=""><br/>
     kosten<input type="text" name="kosten" id=""><br/>
     beschrijving<input type="text" name="beschrijving" id=""><br/>
-    
 
     <input type="submit" name="toevoegen" value="submit">
     <a href="../admin.php">back</a>
