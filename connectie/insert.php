@@ -11,13 +11,20 @@
   <?php
  require_once 'pdo.php';
 
-
 if(isset($_POST["toevoegen"])){ 
-    $sql = "INSERT INTO planeten (prijs,beschrijving,naam) VALUES (:prijs,:beschrijving,:naam)";
+    $sql = "INSERT INTO reizen (naam,kosten,StartDatum,eindDatum,manierVanReizen,klasse,Personen,reis,beschrijving) 
+    VALUES (:naam,:kosten,:startDatum,:eindDatum,:manierVanReizen,:klasse,:Personen,:reis,:beschrijving)";
 
 $stmt = $connect->prepare($sql);
 $stmt->bindParam(":naam", $_POST['naam']);
-$stmt->bindParam(":prijs", $_POST['prijs']);
+$stmt->bindParam(":kosten", $_POST['kosten']);
+$stmt->bindParam(":startDatum", $_POST['startDatum']);
+$stmt->bindParam(":eindDatum", $_POST['eindDatum']);
+$stmt->bindParam(":manierVanReizen", $_POST['manierVanReizen']);
+$stmt->bindParam(":klasse", $_POST['klasse']);
+$stmt->bindParam(":Personen", $_POST['Personen']);
+$stmt->bindParam(":reis", $_POST['reis']);
+$stmt->bindParam(":eindDatum", $_POST['eindDatum']);
 $stmt->bindParam(":beschrijving", $_POST['beschrijving']);
 $stmt->execute();
 header("Location: ../admin.php");
@@ -26,9 +33,14 @@ header("Location: ../admin.php");
 
 <form action="" method= "post">
     naam<input type="text" name="naam" id=""><br/>
-    Prijs<input type="text" name="prijs" id=""><br/>
+    kosten<input type="text" name="kosten" id=""><br/>
+    startDatum<input type="date" name="startDatum" id=""><br/>
+    eindDatum<input type="date" name="eindDatum" id=""><br/>
+    manierVanReizen<input type="text" name="manierVanReizen" id=""><br/>
+    klasse<input type="text" name="klasse" id=""><br/>
+    Personen<input type="text" name="Personen" id=""><br/>
+    reis<input type="text" name="reis" id=""><br/>
     beschrijving<input type="text" name="beschrijving" id=""><br/>
-    
 
     <input type="submit" name="toevoegen" value="submit">
     <a href="../admin.php">back</a>
