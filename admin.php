@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>admin</title>
   <link rel="stylesheet" href="css/admin.css">
-
-
 </head>
 
 <body class="sky" >
@@ -26,8 +24,8 @@ $result = $stmt->fetchAll();
 
 <div class="tablebox">
 
-    <table>
 
+    <table>
         <tr>
             <th>planeetnaam </th>
             <th>kosten </th>
@@ -64,6 +62,7 @@ $result = $stmt->fetchAll();
     </table>
 </div>
   
+
 
 </body>
 </html>
