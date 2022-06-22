@@ -132,6 +132,8 @@ select {
   top: -5px;
   right: 50px;
   color: rgb(103, 2, 103);
+
+
 }
 #footer {
   position: relative;
@@ -312,3 +314,4 @@ select {
     left: 100px;
     top: 150px;
   }
+

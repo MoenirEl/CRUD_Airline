@@ -70,8 +70,12 @@
                 </form>
 
             </div>
-        </div>
+            <div class="container">
+  <div class="box center"></div>
+ <div class="box pause"></div> 
+</div>
 
+        </div>
         <div class="onderblok">
         <div class="col-2">
             <div id="login">
@@ -88,7 +92,6 @@
     </div>
     </div>
     <div id="footer">
-
         <?php
         include_once "includes/footer.php";
         ?>
