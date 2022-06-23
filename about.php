@@ -24,6 +24,7 @@
 <div id="bg"> </div>
 
 <body>
+
     <?php
     include_once "nav.php";
     ?>
@@ -52,9 +53,13 @@
     include_once "includes/footer.php";
     ?>
 
+
     <script type="text/javascript" src="js/particles.min.js"></script>
+
     <script type="text/javascript" src="js/custom.js"></script>
 
 </body>
 
+
 </html>
+

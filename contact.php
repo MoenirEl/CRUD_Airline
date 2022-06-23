@@ -33,6 +33,7 @@
       <div class="right-side">
         <div class="topic-text">contact ons!</div>
         <p> heb je vragen of gewoon wat chatten contact ons!</p>
+
         <form action="#">
           <div class="input-box">
             <input type="text" placeholder="Enter your name">

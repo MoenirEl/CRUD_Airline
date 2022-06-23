@@ -1,5 +1,6 @@
 * {
 
+
   margin: 0;
   padding: 0;
   font-family: 'Space Mono', monospace;
@@ -12,8 +13,8 @@
   left: 0;
   bottom: 0;
   right: 0;
-}
 
+}
 input {
   display: flex;
   align-items: center;
@@ -155,6 +156,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
+
 [type=submit]:hover {
   background-color: rgb(103, 2, 103);
 }
@@ -271,6 +273,7 @@ input[type=submit] {
   left: 100px;
   top: 150px;
 }
+
 
 /* #Off {
   width: 200px;
