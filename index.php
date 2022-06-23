@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +19,15 @@
 
 <body>
 
-    <video src="vid/background.mp4" muted loop autoplay id="vidSpace"></video>
+    <div id="bg"> </div>
     <?php
     include_once "nav.php";
     ?>
+      
 
     <div class="container">
         <div class="textbox">
-            <h1  id="paarstext" >heb je ooit over nagedacht om naar de ruimte te gaan?</h1>
+            <h1  id="wittext" >heb je ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
         <div class="uniblok">
 
@@ -33,7 +37,7 @@
                     <select name="Van" id="van">
                         <option value="retourreis">Retourreis</option>
                         <option value="enkele reis">Enkele reis</option>
-                        <option value="meerdere planten">Meerdere planten</option>
+                        <option value="meerdere planten">Meerdere planeten</option>
                     </select>
                 </form>
             </div>
@@ -66,11 +70,15 @@
                         <option value="7">Uranus</option>
                         <option value="8">Neptunus</option>
                     </select>
-                    <input type="submit" value="Submit" />
+                    <input  type="submit" value="verzend" />
+                     <?php //if (isset($_SESSION['name'])) {
+                        //header("Location: ../inloggen.php");
+                   // }
+                    ?> 
+                        
                 </form>
 
             </div>
- 
 
         </div>
         <div class="onderblok">
@@ -94,6 +102,14 @@
         ?>
     </div>
 
-<script src="js/index.js"></script>
+    
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+
+
 </body>
+
 </html>
+
+
