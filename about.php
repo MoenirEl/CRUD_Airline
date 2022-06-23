@@ -17,8 +17,8 @@
     <title>HoofdpaginaS</title>
 
 </head>
-
-<body class="space">
+<div id="bg"> </div>
+<body >
     <?php
     include_once "nav.php";
     ?>
@@ -47,10 +47,9 @@
     include_once "includes/footer.php";
     ?>
 
+<script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 
 </body>
 
 </html>
-    <script src="https://cdn.jsdelivr.net/npm/moment@latest/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/moment@latest/min/moment-with-locales.min.js"></script>
-    <script src="./dist/tavo-calendar.js"></script>

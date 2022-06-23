@@ -40,5 +40,8 @@
         </div>
         <div class="input-box message-box">
           <textarea placeholder="Stuur ons een berichtje!" name="contact ons" id="" cols="50" rows="4"></textarea>
-          <button onclick="document.location='index.php'" class="button ">home</button>
+          <button
+          <?php
+          ?>
+           header  class="button ">home</button>
           

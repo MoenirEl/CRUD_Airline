@@ -58,19 +58,26 @@
 }
 
 
-.space {
+/* .space {
   width: 100%;
   min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-}
-.container{
+} */
+/* .container{
   display: flex;
   align-items: center;
   justify-content: center ;
   width: 100%;
   height: auto;
   background-color: black;
+} */
+#bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
