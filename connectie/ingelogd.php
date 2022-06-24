@@ -40,4 +40,3 @@ if(count($result) > 0){
 } else {
     echo "username or password not found";
 }
-?>

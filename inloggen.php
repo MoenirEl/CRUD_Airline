@@ -11,15 +11,15 @@
 </head>
 
 <body>
-  <?php 
-    $melding = '';
-    if(isset($_GET['message'])) {
-      $message = $_GET['message'];
+  <?php
+  $melding = '';
+  if (isset($_GET['message'])) {
+    $message = $_GET['message'];
 
-      if ($message === 'gelukt') {
-        $melding = 'Uw gebruiker is aangemaakt';
-      }
+    if ($message === 'gelukt') {
+      $melding = 'Uw gebruiker is aangemaakt';
     }
+  }
   ?>
 
   <div class="container">
@@ -70,7 +70,7 @@
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
-                <input type="text" name="username" placeholder="Enter your username"required><br />
+                <input type="text" name="username" placeholder="Enter your username" required><br />
               </div>
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
@@ -78,7 +78,7 @@
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                 <input type="email" name="mail" placeholder="Enter your e-mail"required><br />
+                <input type="email" name="mail" placeholder="Enter your e-mail" required><br />
               </div>
               <div class="button input-box">
                 <input type="submit" value="Submit" name="submitknop">
@@ -90,15 +90,15 @@
       </div>
     </div>
   </div>
-<?php 
+  <?php
   session_start();
   if (isset($_SESSION['name'])) {
     //echo "gelukt";
   } else {
     //echo 'niet gelukt';
   }
-  
-?>
+
+  ?>
 </body>
 
 </html>
