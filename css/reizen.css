@@ -26,6 +26,10 @@
   width: 50%;
   background-color: aquamarine;
 }
+.zupper{
+  position: relative;
+  z-index: 99;
+}
 
 .left_side{
   background-image: url("../img/spaceship.jpg");
@@ -45,6 +49,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
   height: 50%;
   width: 35%;
   background-color: red;

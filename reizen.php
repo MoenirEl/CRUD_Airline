@@ -28,10 +28,10 @@
                 <input type="date" id="start" name="trip-start" value="2022-06-23" min="2022-06-31" max="2023-10-25">
             </form>
         </div> 
-        <div class="col-3">
+        <div class="col-3 zupper">
             <form action="#">
-                <label for="van">personen</label>
-                <select name="Van" >
+                <label for="">personen</label>
+                <select name="" >
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -43,7 +43,6 @@
     </div>
         <div class="col-3"></div>
         </div>
-        
         <div class="white_space_small"></div>   
 
         <?php
