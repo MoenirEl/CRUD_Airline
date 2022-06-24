@@ -9,13 +9,33 @@ $stmt->execute();
 $result = $stmt->fetch();
 
 if($result == 0){
-    header("Location: ingelogdU.php");
+    $sql = "SELECT * FROM users WHERE username = :username AND password = :password";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":username", $_POST['username']);
+    $stmt->bindParam(":password", $_POST['password']);
+    $stmt->execute();
+    $resultaat = $stmt->fetch();
+
+    if($resultaat == 0){
+        header("Location: incorrect.php");
+        echo "het gaat fout bij de U";
+    }
+
+    if(count($resultaat) > 0){
+        session_start();
+        $_SESSION['id'] = $resultaat["gebruikerID"];
+        $_SESSION['name'] = $resultaat["username"];
+        header("Location: ../index.php");
+    } else {
+        echo "username or password not found";
+    }
+    
 }
 
 if(count($result) > 0){
     session_start();
-    $_SESSION['id'] = '10987765';
-    $_SESSION['name'] = 'admin';
+    $_SESSION['id'] = $resultaat["gebruikerID"];
+    $_SESSION['name'] = "admin";
     header("Location: ../index.php");
 } else {
     echo "username or password not found";

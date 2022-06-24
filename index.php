@@ -25,6 +25,11 @@
     <div id="bg"> </div>
     <?php
     include_once "nav.php";
+    require_once "connectie/pdo.php";
+    $sql = "SELECT * FROM reizen";
+    $stmt = $connect->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
     ?>
       
 
@@ -33,57 +38,43 @@
             <h1  id="wittext" >heb je ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
         <div class="uniblok">
-
+        
             <div class="routeblok">
                 <form action="#">
                     <label for="van">reis</label>
                     <select name="Van" id="van">
-                        <option value="retourreis">Retourreis</option>
-                        <option value="enkele reis">Enkele reis</option>
-                        <option value="meerdere planten">Meerdere planeten</option>
+                        <option name="retourreis">Retourreis</option>
+                        <option name="enkele reis">Enkele reis</option>
+                        <option name="meerdere planten">Meerdere planeten</option>
                     </select>
                 </form>
             </div>
             <div class="reisvan">
+
                 <form id="keuze1" action="#">
                     <label for="van">Vertrek van</label>
                     <select name="Van" id="van">
-                        <option value="1">Aarde</option>
-                        <option value="2">Mercurius</option>
-                        <option value="3">Venus</option>
-                        <option value="4">Mars</option>
-                        <option value="5">Jupiter</option>
-                        <option value="6">Saturnus</option>
-                        <option value="7">Uranus</option>
-                        <option value="8">Neptunus</option>
+                    <?php foreach ($result as $re) { ?>
+                        <option name="vertrek" ><?php echo $re["naam"]; ?></option>
+                    <?php } ?>
                     </select>
 
                 </form>
             </div>
             <div class="reisnaar">
-                <form action="#">
+                
+                <form action="#" method="post">
                     <label for="van">Aankomst op</label>
                     <select name="Van" id="van">
-                        <option value="1">Aarde</option>
-                        <option value="2">Mercurius</option>
-                        <option value="3">Venus</option>
-                        <option value="4">Mars</option>
-                        <option value="5">Jupiter</option>
-                        <option value="6">Saturnus</option>
-                        <option value="7">Uranus</option>
-                        <option value="8">Neptunus</option>
+                    <?php foreach ($result as $re) { ?>
+                        <option name="aankomst" ><?php echo $re["naam"]; ?></option>
+                    <?php } ?>
                     </select>
-                    <input  type="submit" value="verzend" />
-                     <?php //if (isset($_SESSION['name'])) {
-                        //header("Location: ../inloggen.php");
-                   // }
-                    ?> 
-                        
+                    <input  type="submit" value="verzend" />     
                 </form>
-
             </div>
-
         </div>
+
         <div class="onderblok">
         <div class="col-2">
             <div id="login">
@@ -100,19 +91,13 @@
     </div>
     </div>
     <div id="footer">
+
         <?php
         include_once "includes/footer.php";
         ?>
     </div>
 
-    
     <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-
-
-
 </body>
-
 </html>
-
-
