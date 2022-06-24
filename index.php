@@ -73,8 +73,8 @@
                     <input  type="submit" value="verzend" />     
                 </form>
             </div>
-
         </div>
+
         <div class="onderblok">
         <div class="col-2">
             <div id="login">
@@ -91,19 +91,13 @@
     </div>
     </div>
     <div id="footer">
+
         <?php
         include_once "includes/footer.php";
         ?>
     </div>
 
-    
     <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-
-
-
 </body>
-
 </html>
-
-

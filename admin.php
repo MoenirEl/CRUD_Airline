@@ -16,6 +16,7 @@
 require_once "connectie/pdo.php";
 session_start();
 echo "welkom terug " . $_SESSION["name"];
+
 $sql = "SELECT * FROM reizen";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
@@ -62,7 +63,6 @@ $result = $stmt->fetchAll();
             ?>
         </table>
     </div>
-
 
 
 </body>
