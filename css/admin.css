@@ -7,14 +7,14 @@ table {
     border-collapse: collapse;
     width: 75%;
     position: relative;
-    
+
 }
 
 th,
 td {
     text-align: left;
     padding: 12px;
-    
+
 }
 
 
@@ -31,7 +31,7 @@ th {
     background-color: black;
     color: white;
     border-radius: 25% 25% 0% 0%;
-    
+
 }
 
 .tablebox {
@@ -40,7 +40,7 @@ th {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+
 
 }
 
