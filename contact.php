@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+
 <body>
   <div class="container">
     <div class="content">
@@ -42,5 +43,6 @@
           </div>
           <div class="input-box message-box">
             <textarea placeholder="Stuur ons een berichtje!" name="contact ons" id="" cols="50" rows="4"></textarea>
-            <button <?php
-                    ?> header class="button ">home</button>
+             </div>
+        </form>
+            <button type="submit" onclick="document.location='index.php'" class="button ">verzend</button>
