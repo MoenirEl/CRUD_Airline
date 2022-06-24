@@ -14,7 +14,8 @@
     <a class="blue" href="../CRUD_Space/index.php">home</a>
     <?php
 require_once "connectie/pdo.php";
-
+session_start();
+echo "welkom terug " . $_SESSION["name"];
 $sql = "SELECT * FROM reizen";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
