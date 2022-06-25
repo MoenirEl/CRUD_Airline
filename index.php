@@ -42,7 +42,7 @@
             <div class="routeblok">
                 <form action="#">
                     <label for="van">reis</label>
-                    <select name="Van" id="van">
+                    <select name="Van1" id="van">
                         <option name="retourreis">Retourreis</option>
                         <option name="enkele reis">Enkele reis</option>
                         <option name="meerdere planten">Meerdere planeten</option>
@@ -53,7 +53,7 @@
 
                 <form id="keuze1" action="#">
                     <label for="van">Vertrek van</label>
-                    <select name="Van" id="van">
+                    <select name="Van2" id="van">
                     <?php foreach ($result as $re) { ?>
                         <option name="vertrek" ><?php echo $re["naam"]; ?></option>
                     <?php } ?>
@@ -63,14 +63,14 @@
             </div>
             <div class="reisnaar">
                 
-                <form action="#" method="post">
+                <form action="reizen.php" method="post">
                     <label for="van">Aankomst op</label>
-                    <select name="Van" id="van">
+                    <select name="Van3" id="van">
                     <?php foreach ($result as $re) { ?>
                         <option name="aankomst" ><?php echo $re["naam"]; ?></option>
                     <?php } ?>
                     </select>
-                    <input  type="submit" value="verzend" />     
+                    <button id="indexformbutton">verzend</button>     
                 </form>
             </div>
         </div>

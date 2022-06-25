@@ -18,7 +18,6 @@ if($result == 0){
 
     if($resultaat == 0){
         header("Location: incorrect.php");
-        echo "het gaat fout bij de U";
     }
 
     if(count($resultaat) > 0){
