@@ -4,7 +4,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   column-gap: 30px;
-  background-color: rgba(53, 48, 48, 0.393);
+  background-color: rgba(0, 0, 0, 0.875);
   height: 100px;
   width: 100%;
   position: relative;
@@ -19,9 +19,61 @@ nav a {
   color: white;
 }
 
-
 #logo {
   width: 120px;
   position: relative;
   right: 40%;
 }
+
+@media only screen and (max-width: 1024px){
+  #logo{
+    right: 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+#logo{
+  right: 15%;
+}
+}
+@media only screen and (max-width: 476px) {
+
+  nav{
+    column-gap: 7px;
+  }
+  nav a{
+    font-size: 15px;
+    right: 20px;
+  }
+  #logo{
+    width: 65px;
+    right: 10%;
+  }
+  }
+  @media only screen and (max-width: 376px) {
+
+    nav{
+      column-gap: 4px;
+    }
+    nav a{
+      font-size: 13px;
+      right: 20px;
+    }
+
+    }
+    @media only screen and (max-width: 600px) {
+
+      nav{
+        column-gap: 9px;
+      }
+      nav a{
+        font-size: 20px;
+        right: 20px;
+      }
+      #logo{
+        width: 65px;
+        right: 20%;
+      }
+      
+
+      }

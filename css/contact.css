@@ -10,7 +10,7 @@
 body {
   min-height: 100vh;
   width: 100%;
-  background: #c8e8e9;
+  background: #282E2E;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,7 @@ body {
 
 .container {
   width: 85%;
-  background: #fff;
+  background: #000;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -59,19 +59,21 @@ body {
 
 .content .left-side .details i {
   font-size: 30px;
-  color: #3e2093;
+  color: #B1A5D3;
   margin-bottom: 10px;
 }
 
 .content .left-side .details .topic {
   font-size: 18px;
   font-weight: 500;
+  color: 
+  #E9E9E9;
 }
 
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
   font-size: 14px;
-  color: #afafb6;
+  color: #DFDFE1;
 }
 
 .container .content .right-side {
@@ -82,7 +84,7 @@ body {
 .content .right-side .topic-text {
   font-size: 23px;
   font-weight: 600;
-  color: #3e2093;
+  color: #b1a5d3;
 }
 
 .right-side .input-box {
@@ -98,7 +100,7 @@ body {
   border: none;
   outline: none;
   font-size: 16px;
-  background: #F0F1F8;
+  background: #303031;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
@@ -116,31 +118,14 @@ body {
   display: inline-block;
   margin-top: 12px;
 }
-
-.right-side .button input[type="button"] {
-  color: #fff;
-  font-size: 18px;
-  outline: none;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background: #3e2093;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.button input[type="button"]:hover {
-  background: #5029bc;
-}
-
 .button {
-
   border-radius: 25% 10%;
   position: relative;
-  bottom: 15px;
   left: 0px;
   width: 75px;
+  height: 50px;
   border: none;
+  background-color: #303031;
   color: white;
   text-align: center;
   text-decoration: none;

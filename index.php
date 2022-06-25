@@ -70,7 +70,7 @@
                         <option name="aankomst" ><?php echo $re["naam"]; ?></option>
                     <?php } ?>
                     </select>
-                    <button id="indexformbutton">verzend</button>     
+                    <input  type="submit" value="verzend" id="indexformbutton">     
                 </form>
             </div>
         </div>
