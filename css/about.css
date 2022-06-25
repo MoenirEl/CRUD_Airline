@@ -8,6 +8,8 @@
   justify-content: center;
   width: 100%;
   height: auto;
+  background-color: black;
+  color: white;
 }
 
 .ruimte .wrapper {
@@ -74,7 +76,6 @@
   background-color: black;
 
   } */
-
 #bg {
   position: fixed;
   top: 0;

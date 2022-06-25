@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+}
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 840px;
+  background-color: black;
+}
+
+.up_side {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: self-start;
+  height: 10%;
+  width: 50%;
+  background-color: aquamarine;
+}
+
+.zupper {
+  position: relative;
+  z-index: 99;
+}
+
+.left_side {
+  background-image: url("../img/spaceship.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-self: flex-start;
+  height: 50%;
+  width: 35%;
+}
+
+.right_side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 50%;
+  width: 35%;
+  background-color: #b50d13;
+}
+
+.col-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33%;
+  width: 100%;
+}
+
+.white_space {
+  display: flex;
+  align-self: normal;
+  height: 10%;
+  width: 25%;
+
+}
+
+.white_space_small {
+  display: flex;
+  align-self: flex-start;
+  height: 50%;
+  width: 15%;
+}
+
+.white_space_small2 {
+  display: flex;
+  align-self: flex-start;
+  height: 50%;
+  width: 10%;
+}
+
+.bottom_side {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  justify-content: space-evenly;
+  height: 50%;
+  width: 80%;
+}
+
+.row_3 {
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 30%;
+}
+
+.ruimteschip {
+  background-image: url("../img/ruimteschip.jpg");
+  height: 100%;
+  width: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+}
+
+.wormhole {
+  background-image: url("../img/wormholes.jpg");
+  height: 100%;
+  width: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+}
+
+.teleport {
+  background-image: url("../img/teleport.jpg");
+  height: 100%;
+  width: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+}
+
+.wormportB {
+  border-radius: 25% 10%;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.ruimteB {
+  border-radius: 25% 10%;
+  position: relative;
+  height: 50px;
+  width: 100px;
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.afrekenen {
+  border-radius: 25% 10%;
+  position: relative;
+  top: 100px;
+  right: 40px;
+  height: 50px;
+  width: 125px;
+  border: none;
+  color: white;
+  background-color: rgb(3, 72, 3);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.labelW {
+  top: 100px;
+  right: 10px;
+}
+
+.moveW {
+  bottom: 50px;
+  left: 100px;
+}
+
+.HW {
+  left: 100px;
+}
+
+.labelT {
+  align-self: center;
+  top: 100px;
+  right: 100px;
+}
+
+.moveT {
+  align-self: center;
+  bottom: 50px;
+  left: 100px;
+}
+
+.HT {
+  left: 60px;
+}
+
+.moveR {
+  top: 70px;
+}
+
+.moveR2 {
+  top: 115px;
+  right: 60px;
+}
+
+.moveR3 {
+  left: 170px;
+  bottom: 32px;
+}
+
+.labelR1 {
+  top: 150px;
+  right: 215px;
+}
+
+.labelR2 {
+  top: 15px;
+  left: 30px;
+}
+
+.labelR3 {
+bottom: 133px;
+left: 265px;
+}
+
+.labelR1,
+.labelR2,
+.labelR3,
+.labelT,
+.labelW,
+.moveR,
+.moveT,
+.moveW {
+  align-self: center;
+}
+
+.labelR1,
+.labelR2,
+.labelR3,
+.labelT,
+.labelW,
+.moveR,
+.moveT,
+.moveW,
+.HT,
+.HW {
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  .HT{
+    left: 15px;
+  }
+  .labelR1 {
+    top: 120px;
+    left: 10px;
+  }
+  
+  .labelR2 {
+    top: 120px;
+    left: 0px;
+  }
+  
+  .labelR3 {
+  bottom: 110px;
+  left: 10px;
+  }
+  .moveR {
+    top: 170px;
+    right: 70px;
+  }
+  
+  .moveR2 {
+    top: 85px;
+    left: 155px;
+  }
+  
+  .moveR3 {
+    left: 90px;
+    bottom: 150px;
+  }
+  .wormportB {
+    height: 50px;
+    width: 150px;
+  }
+  
+  .ruimteB {
+    height: 50px;
+    width: 80px;
+
+  }
+  .afrekenen {
+    top: 100px;
+    right: 40px;
+    height: 50px;
+    width: 125px;
+
+  }
+}

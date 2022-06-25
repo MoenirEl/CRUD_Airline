@@ -33,15 +33,24 @@
       <div class="right-side">
         <div class="topic-text">contact ons!</div>
         <p> heb je vragen of gewoon wat chatten contact ons!</p>
-
         <form action="#">
           <div class="input-box">
-            <input type="text" placeholder="Enter your name">
+            <input type="text" placeholder="typ hier je naam">
           </div>
           <div class="input-box">
-            <input type="text" placeholder="Enter your email">
+            <input type="text" placeholder="typ hier je email">
           </div>
           <div class="input-box message-box">
             <textarea placeholder="Stuur ons een berichtje!" name="contact ons" id="" cols="50" rows="4"></textarea>
-            <button <?php
-                    ?> header class="button ">home</button>
+             </div>
+        </form>
+            <button type="submit" onclick="document.location='index.php'" class="button ">verzend</button>
+
+  </div>
+  </div>
+  </div>
+
+</body>
+
+
+</html>

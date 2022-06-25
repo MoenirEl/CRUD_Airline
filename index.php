@@ -4,10 +4,8 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&family=Trispace&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/googlefonts.css">
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,14 +36,12 @@
             <h1  id="wittext" >heb je ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
         <div class="uniblok">
-        
             <div class="routeblok">
                 <form action="#">
                     <label for="van">reis</label>
-                    <select name="Van" id="van">
-                        <option name="retourreis">Retourreis</option>
-                        <option name="enkele reis">Enkele reis</option>
-                        <option name="meerdere planten">Meerdere planeten</option>
+                    <select name="Van" >
+                        <option value="retourreis">Retourreis</option>
+                        <option value="enkele reis">Enkele reis</option>
                     </select>
                 </form>
             </div>
@@ -70,8 +66,14 @@
                         <option name="aankomst" ><?php echo $re["naam"]; ?></option>
                     <?php } ?>
                     </select>
-                    <input  type="submit" value="verzend" />     
+
+                        
                 </form>
+                    <button  type="submit"  onclick="document.location='reizen.php'" >verzend</button>
+                     <?php //if (isset($_SESSION['name'])) {
+                        //header("Location: ../inloggen.php");
+                   // }
+                    ?> 
             </div>
         </div>
 
