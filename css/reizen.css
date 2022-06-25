@@ -2,9 +2,13 @@
   margin: 0;
   padding: 0;
 }
-body{
+
+
+body {
   background-color: black;
 }
+
+
 #bg {
   position: fixed;
   top: 0;
@@ -16,7 +20,6 @@ body{
 .container {
   display: flex;
   flex-wrap: wrap;
-
   width: 100%;
   height: 840px;
   background-color: black;
@@ -182,7 +185,7 @@ body{
   border-radius: 25% 10%;
   position: relative;
   top: 100px;
-  right: 40px;
+  left: 120px;
   height: 50px;
   width: 125px;
   border: none;
@@ -198,25 +201,17 @@ body{
   cursor: pointer;
 }
 
-.labelW {
-  top: 100px;
-  right: 10px;
-}
 
 .moveW {
-  bottom: 50px;
-  left: 100px;
+  top: 160px;
+  right: 50px;
+
 }
 
 .HW {
   left: 100px;
 }
 
-.labelT {
-  align-self: center;
-  top: 100px;
-  right: 100px;
-}
 
 .moveT {
   align-self: center;
@@ -227,6 +222,11 @@ body{
 .HT {
   left: 60px;
 }
+
+.HR {
+  left: 60px;
+}
+
 
 .moveR {
   top: 70px;
@@ -253,15 +253,13 @@ body{
 }
 
 .labelR3 {
-bottom: 133px;
-left: 265px;
+  bottom: 133px;
+  left: 265px;
 }
 
 .labelR1,
 .labelR2,
 .labelR3,
-.labelT,
-.labelW,
 .moveR,
 .moveT,
 .moveW {
@@ -271,8 +269,6 @@ left: 265px;
 .labelR1,
 .labelR2,
 .labelR3,
-.labelT,
-.labelW,
 .moveR,
 .moveT,
 .moveW,
@@ -281,51 +277,373 @@ left: 265px;
   position: relative;
 }
 
-@media only screen and (max-width: 1024px) {
-  .HT{
+
+@media only screen and (max-width: 1025px) {
+  .HT {
+    left: 5px;
+  }
+
+  .HR {
     left: 15px;
   }
+
+
   .labelR1 {
     top: 120px;
     left: 10px;
   }
-  
   .labelR2 {
     top: 120px;
     left: 0px;
   }
-  
+
   .labelR3 {
-  bottom: 110px;
-  left: 10px;
+    bottom: 110px;
+    left: 10px;
   }
+
   .moveR {
     top: 170px;
     right: 70px;
   }
-  
   .moveR2 {
     top: 85px;
     left: 155px;
   }
-  
   .moveR3 {
     left: 90px;
     bottom: 150px;
   }
+
+
   .wormportB {
     height: 50px;
     width: 150px;
   }
-  
+
   .ruimteB {
     height: 50px;
     width: 80px;
 
   }
+
   .afrekenen {
-    top: 100px;
-    right: 40px;
+    top: 50px;
+    left: 55px;
+    height: 50px;
+    width: 125px;
+
+  }
+
+  .moveW {
+    top: 50px;
+    right: -45px;
+  }
+
+  .HW {
+    left: 50px;
+  }
+
+  .moveT {
+    bottom: 10px;
+    left: 50px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .HT {
+    left: 5px;
+    font-size: 23px;
+  }
+
+  .HR {
+    left: 15px;
+    font-size: 26px;
+  }
+
+  .HW {
+    left: 40px;
+    font-size: 26px;
+  }
+
+  .labelR1 {
+    top: 120px;
+    left: 5px;
+  }
+
+  .labelR2 {
+    top: 10px;
+    left: 110px;
+  }
+
+  .labelR3 {
+    bottom: 220px;
+    left: 60px;
+  }
+
+  .moveR {
+    top: 170px;
+    right: 80px;
+  }
+
+  .moveR2 {
+    top: 85px;
+    left: 30px;
+  }
+
+  .moveR3 {
+    left: -25px;
+    bottom: 150px;
+  }
+
+  .wormportB {
+    height: 50px;
+    width: 150px;
+  }
+
+  .ruimteB {
+    height: 50px;
+    width: 80px;
+
+  }
+
+  .afrekenen {
+    top: 50px;
+    left: 25px;
+    height: 50px;
+    width: 125px;
+
+  }
+
+  .moveW {
+    top: 50px;
+    right: -15px;
+  }
+
+  .moveT {
+    bottom: 10px;
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .HT {
+    left: 0px;
+    font-size: 25px;
+  }
+
+  .HR {
+    left: 0px;
+    font-size: 25px;
+  }
+
+  .HW {
+    left: 0px;
+    font-size: 25px;
+  }
+
+  .labelR1 {
+    top: 19px;
+    left: -150px;
+  }
+
+  .labelR2 {
+    top: 19px;
+    left: -165px;
+  }
+
+  .labelR3 {
+    bottom: 49px;
+    left: 225px;
+  }
+
+  .moveR {
+    top: 65px;
+    right: 230px;
+  }
+
+  .moveR2 {
+    top: 1px;
+    left: 170px;
+  }
+
+  .moveR3 {
+    left: 140px;
+    bottom: -1px;
+  }
+
+  .wormportB {
+    height: 50px;
+    width: 150px;
+  }
+  .ruimteB {
+    height: 50px;
+    width: 80px;
+
+  }
+
+
+  .afrekenen {
+    top: 222px;
+    left: -130px;
+    height: 50px;
+    width: 125px;
+
+  }
+
+  .moveW {
+    top: 0px;
+    right: -15px;
+  }
+
+  .moveT {
+    bottom: 10px;
+    left: -50px;
+  }
+
+  .bottom_side {
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+  }
+
+  .up_side {
+    height: 10%;
+    width: 100%;
+  }
+
+  .left_side {
+    height: 0%;
+    width: 0%;
+  }
+
+  .right_side {
+    height: 50%;
+    width: 70%;
+  }
+
+  .white_space {
+    height: 0%;
+    width: 0%;
+  }
+
+  .white_space_small {
+    height: 50%;
+    width: 15%;
+
+  }
+
+  .white_space_small2 {
+    width: 0%;
+    height: 0%;
+  }
+
+  .ruimteschip {
+    height: 33%;
+    width: 100%;
+  }
+
+  .wormhole {
+    height: 33%;
+    width: 100%;
+  }
+
+  .teleport {
+    height: 33%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 376px){
+  .labelR1 {
+    top: 19px;
+    left: -150px;
+  }
+
+  .labelR2 {
+    top: -50px;
+    left: 150px;
+  }
+
+  .labelR3 {
+    bottom: 49px;
+    left: 115px;
+  }
+
+  .moveR {
+    top: 65px;
+    right: 230px;
+  }
+
+  .moveR2 {
+    top: 1px;
+    left: 70px;
+  }
+
+  .moveR3 {
+    left: 30px;
+    bottom: -1px;
+  }
+  .moveW {
+    top: 50px;
+    right: 10px;
+  }
+
+  .moveT {
+    bottom: 10px;
+    left: -70px;
+  }
+  .afrekenen {
+    top: 153px;
+    left: 130px;
+    height: 50px;
+    width: 125px;
+
+  }
+}
+
+@media only screen and (max-width: 321px){
+  .labelR1 {
+    top: 54px;
+    left: -170px;
+  }
+
+  .labelR2 {
+    top: 10px;
+    left: 35px;
+  }
+
+  .labelR3 {
+    bottom: 49px;
+    left: 235px;
+  }
+
+  .moveR {
+    top: 47px;
+    right: 0px;
+  }
+
+  .moveR2 {
+    top: 47px;
+    left: -50px;
+  }
+
+  .moveR3 {
+    left: 150px;
+    bottom: 12px;
+  }
+  .moveW {
+    top: 50px;
+    right: 35px;
+  }
+
+  .moveT {
+    bottom: 45px;
+    left: 90px;
+  }
+  .afrekenen {
+    top: 153px;
+    left: 100px;
     height: 50px;
     width: 125px;
 
