@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reizen.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/footer.css">
+
 </head>
 
 <body>
@@ -52,6 +52,7 @@
 
         <div class="bottom_side">
             <div class="row_3 ruimteschip">
+
                 <h1 class="HR" >ruimteschip</h1>
                 <label class="labelR1" for=""> klasse 3</label>
                 <button class="ruimteB moveR">499 Euro</button>
@@ -65,11 +66,13 @@
             </div>
             <div class="row_3 wormhole">
                 <h1 class="HW">Wormgat</h1>
+
                 <button class="wormportB moveW">899 Euro</button>
                 <button class="afrekenen">afrekenen</button>
             </div>
             <div class="row_3 teleport">
                 <h1 class="HT">Teleportatie</h1>
+
                 <button class="wormportB moveT ">999 Euro</button>
 
 

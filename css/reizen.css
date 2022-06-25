@@ -3,9 +3,11 @@
   padding: 0;
 }
 
+
 body {
   background-color: black;
 }
+
 
 #bg {
   position: fixed;
@@ -179,7 +181,6 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
 .afrekenen {
   border-radius: 25% 10%;
   position: relative;
@@ -200,14 +201,17 @@ body {
   cursor: pointer;
 }
 
+
 .moveW {
   top: 160px;
   right: 50px;
+
 }
 
 .HW {
   left: 100px;
 }
+
 
 .moveT {
   align-self: center;
@@ -222,6 +226,7 @@ body {
 .HR {
   left: 60px;
 }
+
 
 .moveR {
   top: 70px;
@@ -272,6 +277,7 @@ body {
   position: relative;
 }
 
+
 @media only screen and (max-width: 1025px) {
   .HT {
     left: 5px;
@@ -281,11 +287,11 @@ body {
     left: 15px;
   }
 
+
   .labelR1 {
     top: 120px;
     left: 10px;
   }
-
   .labelR2 {
     top: 120px;
     left: 0px;
@@ -300,16 +306,15 @@ body {
     top: 170px;
     right: 70px;
   }
-
   .moveR2 {
     top: 85px;
     left: 155px;
   }
-
   .moveR3 {
     left: 90px;
     bottom: 150px;
   }
+
 
   .wormportB {
     height: 50px;
@@ -471,12 +476,12 @@ body {
     height: 50px;
     width: 150px;
   }
-
   .ruimteB {
     height: 50px;
     width: 80px;
 
   }
+
 
   .afrekenen {
     top: 222px;
