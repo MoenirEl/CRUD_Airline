@@ -55,14 +55,11 @@ select {
   justify-content: center;
   flex-direction: row;
   position: relative;
-  top: 100px;
   border: 2px solid white;
-  padding: 10px;
   border-radius: 0px 0px 25px 25px;
   position: relative;
-  bottom: 50px;
   height: 400px;
-  width: 65%;
+  width: 100%;
   background-color: #051937;
 }
 
@@ -71,12 +68,10 @@ select {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 100px;
-  border: 2px solid white;
-  padding: 10px;
+  top: 0px;
+  border: 2px solid white;;
   border-radius: 25px 25px 0px 0px;
   position: relative;
-  bottom: 50px;
   height: 150px;
   width: 65%;
   background-color: #051937;
@@ -112,7 +107,7 @@ select {
   height: 300px;
 }
 
-.routeblok form {
+.routeform {
   position: relative;
   bottom: 50px;
   left: 50px;
@@ -120,13 +115,13 @@ select {
 
 }
 
-.reisvan form {
+.reisvanform {
   position: relative;
   bottom: 50px;
   color: white;
 }
 
-.reisnaar form {
+.reisnaarform {
   position: relative;
   bottom: 58px;
   right: 50px;
@@ -266,6 +261,342 @@ button[type=submit] {
   left: 100px;
   top: 150px;
 }
+form{
+  display: flex;
+  top: 0px;
+  border: 2px solid white;
+  border-radius: 0px 0px 25px 25px;
+  position: relative;
+  height: 500px;
+  width: 65%;
+}
+
+@media only screen and (max-width: 1350px) {
+
+  button[type=submit] {
+    right: 368px;
+  }
+}
+
+@media only screen and (max-width: 1325px) {
+
+  button[type=submit] {
+    right: 345px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  button[type=submit] {
+    right: 300px;
+  }
+
+  .reisnaarform {
+    font-size: 12px;
+    bottom: 46px;
+
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+
+  button[type=submit] {
+    right: 280px;
+  }
+
+  .reisnaarform {
+    font-size: 11px;
+    bottom: 50px;
+  }
+
+  .reisvanform {
+    font-size: 15px;
+  }
+
+  .routeform {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+
+  button[type=submit] {
+    right: 270px;
+  }
+
+  .reisnaarform {
+    font-size: 10px;
+    bottom: 46px;
+  }
+
+
+  .reisvanform {
+    font-size: 13px;
+  }
+
+  .routeform {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+
+  button[type=submit] {
+    right: 260px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+
+  button[type=submit] {
+    right: 190px;
+  }
+
+  .reisnaarform {
+    font-size: 8px;
+    bottom: 53px;
+  }
+
+
+  .reisvanform {
+    font-size: 9px;
+  }
+
+  .routeform {
+    font-size: 9px;
+  }
+
+  .contact {
+    width: 300px;
+    height: 350px;
+  }
+
+  #login {
+    width: 300px;
+    height: 350px;
+
+  }
+
+  .col-2 {
+    height: 350px;
+    width: 300px;
+
+  }
+
+  .login_welkom {
+    font-size: 25px;
+    left: 30px;
+  }
+
+  .contact_welkom {
+    font-size: 30px;
+    left: 35px;
+    top: 0px;
+  }
+
+  .buttonknop {
+    left: 50px;
+    top: 100px;
+  }
+
+  .buttonknop2 {
+    left: 50px;
+    top: 150px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  button[type=submit] {
+    right: 0px;
+    width: 55px;
+    height: 30px;
+    right: 25px;
+  }
+
+  .reisnaarform {
+    font-size: 9px;
+    bottom: 0px;
+    right: 0px;
+    width: 250px;
+    height: 20px;
+    bottom: 70px;
+    left: 30px;
+  }
+
+
+  .reisvanform {
+    font-size: 9px;
+    bottom: 0px;
+    width: 200px;
+    height: 20px;
+    bottom: 50px;
+  }
+
+  .routeform {
+    font-size: 9px;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+    height: 20px;
+    bottom: 50px;
+  }
+
+  .contact {
+    width: 300px;
+    height: 200px;
+  }
+
+  #login {
+    width: 300px;
+    height: 200px;
+
+  }
+
+  .col-2 {
+    height: 200px;
+    width: 300px;
+
+  }
+
+  .login_welkom {
+    font-size: 25px;
+    left: 30px;
+  }
+
+  .contact_welkom {
+    font-size: 30px;
+    left: 35px;
+    top: 0px;
+  }
+
+  .buttonknop {
+    left: 50px;
+    top: 50px;
+  }
+
+  .buttonknop2 {
+    left: 50px;
+    top: 100px;
+  }
+
+  .textbox {
+    top: 0px;
+  }
+
+  #wittext {
+    font-size: 15px;
+
+  }
+
+  .uniblok {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+    top: 0px;
+
+  }
+}
+
+@media only screen and (max-width: 476px) {
+
+  button[type=submit] {
+    right: 0px;
+    width: 55px;
+    height: 30px;
+    right: 25px;
+  }
+
+  .reisnaarform {
+    font-size: 9px;
+    bottom: 0px;
+    right: 0px;
+    width: 250px;
+    height: 20px;
+    bottom: 70px;
+    left: 30px;
+  }
+
+
+  .reisvanform {
+    font-size: 9px;
+    bottom: 0px;
+    width: 200px;
+    height: 20px;
+    bottom: 50px;
+  }
+
+  .routeform {
+    font-size: 9px;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+    height: 20px;
+    bottom: 50px;
+  }
+
+  .contact {
+    width: 300px;
+    height: 200px;
+  }
+
+  #login {
+    width: 300px;
+    height: 200px;
+
+  }
+
+  .col-2 {
+    height: 200px;
+    width: 300px;
+
+  }
+
+  .login_welkom {
+    font-size: 25px;
+    left: 30px;
+  }
+
+  .contact_welkom {
+    font-size: 30px;
+    left: 35px;
+    top: 0px;
+  }
+
+  .buttonknop {
+    left: 50px;
+    top: 50px;
+  }
+
+  .buttonknop2 {
+    left: 50px;
+    top: 100px;
+  }
+
+  .textbox {
+    top: -100px;
+  }
+
+  #wittext {
+    font-size: 15px;
+
+  }
+
+  .uniblok {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+    top: -100px;
+
+  }
+  form{
+    height: 350px;
+  }
+}
+
+
+
+
 
 @media only screen and (max-width: 1350px) {
 

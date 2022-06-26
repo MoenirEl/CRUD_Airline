@@ -83,3 +83,21 @@
   bottom: 0;
   right: 0;
 }
+@media only screen and (max-width: 769px) {
+  .travel .content h3 {
+    font-size: 23px;
+  }
+  .travel .content p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .travel .content h3 {
+    font-size: 17px;
+  }
+  .travel .content p {
+    font-size: 10px;
+    line-height: 23px;
+  }
+}
