@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boeking</title>
     <link rel="stylesheet" href="css/reizen.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
@@ -14,12 +14,21 @@
     <div id="bg"> </div>
     <?php
     include_once "nav.php";
+    include_once "connectie/pdo.php";
+    $sql = "SELECT * FROM reizen WHERE naam = :Naam";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":Naam", $_POST['Naar']);
+    $stmt->execute();
+    $result = $stmt->fetch();
     ?>
 
     <div class="container">
         <div class="white_space"></div>
         <div class="up_side">
-            <!-- values van home page -->
+            <p>u heeft de reis van</p><?php echo $_POST['Van'];?>
+            <p>naar</p><?php echo $_POST['Naar'];?>
+            <p>met</p><?php echo $_POST['Reis'];?>
+            <p>geselecteerd.</p>
         </div>
         <div class="white_space"></div>
         <div class="white_space_small"></div>
@@ -44,7 +53,9 @@
                 </form>
             </div>
             <div class="col-3"></div>
-            <!-- ophalen van beschrijving -->
+            <?php # foreach ($result as $re) { ?>
+            <?php # echo $re['10']; }?>
+
         </div>
         <div class="white_space_small"></div>
         <div class="white_space_small2"></div>
