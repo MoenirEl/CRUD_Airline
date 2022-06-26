@@ -3,11 +3,9 @@
   padding: 0;
 }
 
-
 body {
   background-color: black;
 }
-
 
 #bg {
   position: fixed;
@@ -201,17 +199,14 @@ body {
   cursor: pointer;
 }
 
-
 .moveW {
   top: 160px;
   right: 50px;
-
 }
 
 .HW {
   left: 100px;
 }
-
 
 .moveT {
   align-self: center;
@@ -226,7 +221,6 @@ body {
 .HR {
   left: 60px;
 }
-
 
 .moveR {
   top: 70px;
@@ -277,7 +271,6 @@ body {
   position: relative;
 }
 
-
 @media only screen and (max-width: 1025px) {
   .HT {
     left: 5px;
@@ -286,7 +279,6 @@ body {
   .HR {
     left: 15px;
   }
-
 
   .labelR1 {
     top: 120px;
@@ -314,7 +306,6 @@ body {
     left: 90px;
     bottom: 150px;
   }
-
 
   .wormportB {
     height: 50px;

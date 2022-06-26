@@ -37,7 +37,6 @@ nav a {
 }
 }
 
-
     @media only screen and (max-width: 600px) {
 
       nav{
@@ -55,7 +54,6 @@ nav a {
 
       }
 @media only screen and (max-width: 426px) {
-
 
   nav{
     column-gap: 7px;
@@ -80,8 +78,7 @@ nav a {
     }
 
     }
-
-    @media only screen and (max-width: 321px) {
+   @media only screen and (max-width: 321px) {
 
       nav{
         column-gap: 4px;
@@ -91,5 +88,4 @@ nav a {
         right: 20px;
       }
   
-
       }
