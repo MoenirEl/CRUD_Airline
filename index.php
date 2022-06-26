@@ -35,46 +35,48 @@
         <div class="textbox">
             <h1  id="wittext" >heb je ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
+            <form action="">
         <div class="uniblok">
-            <div class="routeblok">
-                <form action="#">
-                    <label for="van">reis</label>
-                    <select name="Van" >
-                        <option value="retourreis">Retourreis</option>
-                        <option value="enkele reis">Enkele reis</option>
-                    </select>
-                </form>
-            </div>
-            <div class="reisvan">
+                   
 
-                <form id="keuze1" action="#">
-                    <label for="van">Vertrek van</label>
-                    <select name="Van" id="van">
-                    <?php foreach ($result as $re) { ?>
-                        <option name="vertrek" ><?php echo $re["naam"]; ?></option>
-                    <?php } ?>
-                    </select>
-
-                </form>
-            </div>
-            <div class="reisnaar">
-                
-                <form action="#" method="post">
-                    <label for="van">Aankomst op</label>
-                    <select name="Van" id="van">
-                    <?php foreach ($result as $re) { ?>
-                        <option name="aankomst" ><?php echo $re["naam"]; ?></option>
-                    <?php } ?>
-                    </select>
-
+                <div class="routeblok">
+                    <div class="routeform" >
+                        <label for="van">reis</label>
+                        <select name="Van" >
+                            <option value="retourreis">Retourreis</option>
+                            <option value="enkele reis">Enkele reis</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="reisvan">
+                    <div class="reisvanform" >
+                        <label for="van">Vertrek van</label>
+                        <select name="Van" id="van">
+                            <?php foreach ($result as $re) { ?>
+                                <option name="vertrek" ><?php echo $re["naam"]; ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
                         
-                </form>
-                    <button  type="submit"  onclick="document.location='reizen.php'" >verzend</button>
-                     <?php //if (isset($_SESSION['name'])) {
+                    </div>
+                    <div class="reisnaar">
+                        <div class="reisnaarform" >
+                            <label for="van">Aankomst op</label>
+                            <select name="Van" id="van">
+                                <?php foreach ($result as $re) { ?>
+                                    <option name="aankomst" ><?php echo $re["naam"]; ?></option>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                        </form>
+                            <button  type="submit"  onclick="document.location='reizen.php'" >verzend</button>
+                            <?php //if (isset($_SESSION['name'])) {
                         //header("Location: ../inloggen.php");
                    // }
                     ?> 
             </div>
+        </div>
+
         </div>
 
         <div class="onderblok">
