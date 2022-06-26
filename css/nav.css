@@ -78,7 +78,7 @@ nav a {
     }
 
     }
-    @media only screen and (max-width: 321px) {
+   @media only screen and (max-width: 321px) {
 
       nav{
         column-gap: 4px;

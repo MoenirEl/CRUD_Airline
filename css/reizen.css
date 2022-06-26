@@ -179,7 +179,6 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
 .afrekenen {
   border-radius: 25% 10%;
   position: relative;
@@ -285,7 +284,6 @@ body {
     top: 120px;
     left: 10px;
   }
-
   .labelR2 {
     top: 120px;
     left: 0px;
@@ -300,12 +298,10 @@ body {
     top: 170px;
     right: 70px;
   }
-
   .moveR2 {
     top: 85px;
     left: 155px;
   }
-
   .moveR3 {
     left: 90px;
     bottom: 150px;
@@ -471,7 +467,6 @@ body {
     height: 50px;
     width: 150px;
   }
-
   .ruimteB {
     height: 50px;
     width: 80px;

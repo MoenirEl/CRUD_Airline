@@ -8,7 +8,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reizen.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
