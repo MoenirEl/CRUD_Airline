@@ -4,8 +4,10 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&family=Trispace&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/googlefonts.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,16 +35,21 @@
 
     <div class="container">
         <div class="textbox">
-            <h1  id="wittext" >heb je ooit over nagedacht om naar de ruimte te gaan?</h1>
+            <h1  id="wittext" >heeft u ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
-            <form action="reizen.php">
+
+            <form action="reizen.php" method="post">
+
         <div class="uniblok">
                    
 
                 <div class="routeblok">
                     <div class="routeform" >
-                        <label for="van">reis</label>
-                        <select name="Van" >
+
+                        <label for="Reis">reis</label>
+                        <select name="Reis" id="Reis">
+                            <option selected></option>
+
                             <option value="retourreis">Retourreis</option>
                             <option value="enkele reis">Enkele reis</option>
                         </select>
@@ -51,7 +58,10 @@
                 <div class="reisvan">
                     <div class="reisvanform" >
                         <label for="van">Vertrek van</label>
-                        <select name="Van" id="van">
+
+                        <select name="Van" id="Van">
+                            <option selected></option>
+
                             <?php foreach ($result as $re) { ?>
                                 <option name="vertrek" ><?php echo $re["naam"]; ?></option>
                                 <?php } ?>
@@ -61,20 +71,19 @@
                     </div>
                     <div class="reisnaar">
                         <div class="reisnaarform" >
-                            <label for="van">Aankomst op</label>
-                            <select name="Van" id="van">
+
+                            <label for="Naar">Aankomst op</label>
+                            <select name="Naar" id="Naar">
+                                <option selected></option>
+
                                 <?php foreach ($result as $re) { ?>
                                     <option name="aankomst" ><?php echo $re["naam"]; ?></option>
                                     <?php } ?>
                                 </select>
                             </div>
-                            
+
                         </form>
-                            <button  type="submit"  onclick="document.location='reizen.php'" >verzend</button>
-                            <?php //if (isset($_SESSION['name'])) {
-                        //header("Location: ../inloggen.php");
-                   // }
-                    ?> 
+                            <button  type="submit"  id="indexformbutton" >verzend</button>
             </div>
         </div>
 
@@ -101,7 +110,7 @@
         include_once "includes/footer.php";
         ?>
     </div>
-
+    <script src="js/index.js"></script>
     <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
 </body>
