@@ -31,7 +31,7 @@
             
         ?>
         <a href="info.php">info</a>
-        <a href="about.php">about us</a>
+        <a href="about.php">Over ons</a>
         <a href="contact.php">contact</a>
         <?php
         if (isset($_SESSION['name'])) {

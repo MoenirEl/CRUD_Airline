@@ -34,12 +34,12 @@
             <div class="wrapper">
                 <div class="contact">
                     <div class="image">
-                        <img src="img/gate2.jpeg" alt="travel" />
+                        <img src="img/Eclipse.jpg" alt="travel" />
                     </div>
                     <div class="content">
-                        <h2>About us</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae soluta sequi quam pariatur numquam consectetur, nesciunt inventore ab corporis delectus odio hic dicta, error aliquid ex est reiciendis quis at architecto nisi! Earum consectetur, tenetur aspernatur neque harum atque nisi architecto at ipsa saepe nemo obcaecati optio repudiandae iure vel et illo. Culpa ex quam hic a rem qui dolores cupiditate vel numquam quisquam? Vel labore obcaecati modi, corrupti alias assumenda itaque aliquid eos aliquam!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae soluta sequi quam pariatur numquam consectetur, nesciunt inventore ab corporis delectus odio hic dicta, error aliquid ex est reiciendis quis at architecto nisi! Earum consectetur, tenetur aspernatur neque harum atque nisi architecto at ipsa saepe nemo obcaecati optio repudiandae iure vel et illo. Culpa ex quam hic a rem qui dolores cupiditate vel numquam quisquam? Vel labore obcaecati modi, corrupti alias assumenda itaque aliquid eos aliquam!</p>
+                        <h2>Over ons</h2>
+                        <p>Waarom hebben we dit bedrijf eigenlijk gemaakt? simpel we wouden dat mensen die ooit over nagedacht hadden "wat het zal zijn in de ruimte" een kans te geven om het te ervaren. Roy en Moenir hebben alles gedaan om het waar te maken en nu is het eindelijk tijd om jullie te laten zien wat we hebben bereikt. </p>
+                        <p>Wat komt er in de toekomst? In de verre toekomst hopen we dat we verder kunnen gaan dan mensen ooit kunnen druven dromen. We hebben het dan over een anderen universums om dit mogelijk te maken zijn wel elke dag bezig om zo veel mogelijk dingen te verbeteren. Stap voor stap komen we naar ons goal. </p>
                     </div>
 
                 </div>

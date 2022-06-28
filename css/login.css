@@ -233,10 +233,12 @@ body {
 }
 
 .forms .form-content .login-text,
-.forms .form-content .sign-up-text {
+.forms .form-content .sign-up-text,
+.forms .form-content .back-to-home {
   text-align: center;
   margin-top: 25px;
 }
+
 
 .container #flip {
   display: none;
