@@ -33,7 +33,7 @@ if($result == 0){
 
 if(count($result) > 0){
     session_start();
-    $_SESSION['id'] = $resultaat["gebruikerID"];
+    $_SESSION['id'] = $result["ID"];
     $_SESSION['name'] = "admin";
     header("Location: ../index.php");
 } else {

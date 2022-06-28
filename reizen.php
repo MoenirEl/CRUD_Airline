@@ -53,8 +53,8 @@
                 </form>
             </div>
             <div class="col-3"></div>
-            <?php # foreach ($result as $re) { ?>
-            <?php # echo $re['10']; }?>
+            <?php  //foreach ($result as $re) { ?>
+            <?php  //echo $re['beschrijving']; }?>
 
         </div>
         <div class="white_space_small"></div>
