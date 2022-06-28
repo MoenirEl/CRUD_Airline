@@ -35,7 +35,7 @@
         <div class="textbox">
             <h1  id="wittext" >heb je ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
-            <form action="">
+            <form action="reizen.php">
         <div class="uniblok">
                    
 
@@ -68,6 +68,7 @@
                                     <?php } ?>
                                 </select>
                             </div>
+                            
                         </form>
                             <button  type="submit"  onclick="document.location='reizen.php'" >verzend</button>
                             <?php //if (isset($_SESSION['name'])) {

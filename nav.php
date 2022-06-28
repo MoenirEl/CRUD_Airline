@@ -22,7 +22,7 @@
             session_start();
             if (isset($_SESSION['name'])) {
                 if ($_SESSION['name'] == "admin" ) {
-                    echo '<a href="admin.php">admin page</a>';
+                    echo '<a href="adminkeuze.php">admin page</a>';
                 }
             }
             else {

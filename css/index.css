@@ -202,7 +202,6 @@ button[type=submit] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: lightgoldenrodyellow;
 }
 
 #login {
@@ -214,7 +213,6 @@ button[type=submit] {
   background-size: cover;
   color: white;
   border-radius: 7px;
-  background-color: lightblue;
 }
 
 
