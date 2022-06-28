@@ -14,12 +14,12 @@
     require_once "pdo.php";
 
 
-    $stmt = $connect->prepare("SELECT * FROM planeten WHERE ID = :ID");
+    $stmt = $connect->prepare("SELECT * FROM reizen WHERE reisID = :ID");
     $stmt->execute(['ID' => $_GET['id']]);
     $data = $stmt->fetch();
 
     if (isset($_POST["aanpassen"])) {
-        $sql = "UPDATE planeten SET 
+        $sql = "UPDATE reizen SET 
     naam = :naam,
     prijs = :prijs,
     beschrijving =:beschrijving 

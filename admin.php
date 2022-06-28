@@ -15,7 +15,16 @@
     <?php
 require_once "connectie/pdo.php";
 session_start();
-echo "welkom terug " . $_SESSION["name"];
+if (isset($_SESSION['name'])) {
+    if ($_SESSION['name'] == "admin" ) {
+        echo "welkom terug " . $_SESSION["name"];
+    } else{
+        header("Location: index.php");
+    }
+}
+else {
+    header("Location: index.php");
+}
 
 $sql = "SELECT * FROM reizen";
 $stmt = $connect->prepare($sql);
