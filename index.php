@@ -37,7 +37,7 @@
         <div class="textbox">
             <h1  id="wittext" >heeft u ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
-            <form action="reizen.php" method="post">
+            <form action="reizen.php" method="post" id="indexform">
         <div class="uniblok">
                    
 

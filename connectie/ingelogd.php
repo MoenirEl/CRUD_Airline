@@ -1,4 +1,4 @@
-<?php 
+<?php
 include_once "pdo.php";
  
 $sql = "SELECT * FROM admin WHERE username = :username AND password = :password";
