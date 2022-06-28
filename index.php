@@ -37,16 +37,15 @@
         <div class="textbox">
             <h1  id="wittext" >heeft u ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
+            <form action="reizen.php" method="post">
         <div class="uniblok">
                    
 
+                <div class="routeblok">
                     <div class="routeform" >
-                    <form method="post" action="reizen.php">
-
                         <label for="Reis">reis</label>
                         <select name="Reis" id="Reis">
                             <option selected></option>
-                            
                             <option value="retourreis">Retourreis</option>
                             <option value="enkele reis">Enkele reis</option>
                         </select>
@@ -55,10 +54,8 @@
                 <div class="reisvan">
                     <div class="reisvanform" >
                         <label for="van">Vertrek van</label>
-                        
                         <select name="Van" id="Van">
                             <option selected></option>
-                            
                             <?php foreach ($result as $re) { ?>
                                 <option name="vertrek" ><?php echo $re["naam"]; ?></option>
                                 <?php } ?>
@@ -68,19 +65,17 @@
                     </div>
                     <div class="reisnaar">
                         <div class="reisnaarform" >
-                            
                             <label for="Naar">Aankomst op</label>
                             <select name="Naar" id="Naar">
                                 <option selected></option>
-                                
                                 <?php foreach ($result as $re) { ?>
                                     <option name="aankomst" ><?php echo $re["naam"]; ?></option>
                                     <?php } ?>
                                 </select>
                             </div>
-                            <button  type="submit"  id="indexformbutton" >verzend</button>
                         </form>
-                    </div>
+                            <button  type="submit"  id="indexformbutton" >verzend</button>
+            </div>
         </div>
 
         </div>

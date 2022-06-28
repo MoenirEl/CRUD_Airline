@@ -13,7 +13,7 @@
 <body>
     <div id="bg"> </div>
     <?php
-    include_once "nav.php";
+    include_once "includes/nav.php";
     include_once "connectie/pdo.php";
     $sql = "SELECT * FROM reizen WHERE naam = :Naam";
     $stmt = $connect->prepare($sql);

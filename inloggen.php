@@ -56,11 +56,12 @@
                 <i class="fas fa-lock"></i>
                 <input type="text" name="password" placeholder="Enter your password" required>
               </div>
-              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="text"><a href="#">Wachtwoord vergeten?</a></div>
               <div class="button input-box">
                 <input type="submit" value="Login">
               </div>
-              <div class="text sign-up-text">Don't have an account? <label for="flip">Signup now</label></div>
+              <div class="text sign-up-text">Geen account? <label for="flip">Schrijf je nu in!</label></div>
+              <div><a href="index.php">Terug?</a></div>
             </div>
           </form>
         </div>

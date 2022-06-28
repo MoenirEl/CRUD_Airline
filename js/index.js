@@ -6,8 +6,8 @@ formbutton1.addEventListener("click", (e) => {
     if(form1.value == "" || form2.value == "" || form3.value == ""){
         e.preventDefault();
         alert("u moet in alle vakken iets hebben geselecteerd");
-    } //else if(form2.value == form3.value){
-        //e.preventDefault();
-        //alert("het vertrekpunt en aankomstpunt mogen niet hetzelfde zijn.");
-    //}
+    } else if(form2.value == form3.value){
+        e.preventDefault();
+        alert("het vertrekpunt en aankomstpunt mogen niet hetzelfde zijn.");
+    }
 });

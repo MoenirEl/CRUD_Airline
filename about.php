@@ -25,7 +25,7 @@
 
 <body>
     <?php
-    include_once "nav.php";
+    include_once "includes/nav.php";
     ?>
 
 
