@@ -12,6 +12,16 @@
 <body>
     <?php
     require_once 'pdo.php';
+    session_start();
+    if (isset($_SESSION['name'])) {
+        if ($_SESSION['name'] == "admin" ) {
+        } else{
+            header("Location: index.php");
+        }
+    }
+    else {
+        header("Location: index.php");
+    }
 
     if (isset($_POST["toevoegen"])) {
         $sql = "INSERT INTO reizen (naam,kosten,StartDatum,eindDatum,manierVanReizen,klasse,Personen,reis,beschrijving) 

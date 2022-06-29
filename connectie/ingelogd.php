@@ -1,4 +1,4 @@
-<?php 
+<?php
 include_once "pdo.php";
  
 $sql = "SELECT * FROM admin WHERE username = :username AND password = :password";
@@ -23,7 +23,7 @@ if($result == 0){
     if(count($resultaat) > 0){
         session_start();
         $_SESSION['id'] = $resultaat["gebruikerID"];
-        $_SESSION['name'] = $resultaat["username"];
+        $_SESSION['name'] = "user";
         header("Location: ../index.php");
     } else {
         echo "username or password not found";
