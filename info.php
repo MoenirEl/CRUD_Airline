@@ -24,27 +24,27 @@
 
 <body>
     <?php
-    include_once "nav.php";
+    include_once "includes/nav.php";
     ?>
     <div class="container">
         <div class="ruimte">
             <div class="wrapper">
                 <div class="travel">
                     <div class="image">
-                        <img src="img/gate2.jpeg" alt="travel" />
+                        <img src="img/venus.jpg" alt="travel" />
                     </div>
                     <div class="content">
-                        <h3>Titel</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quasi ea laborum, delectus omnis autem nulla eius, corporis tenetur praesentium illo inventore. Molestiae debitis iure mollitia voluptatibus neque blanditiis eveniet quas nesciunt animi asperiores eum provident unde commodi voluptates, suscipit dolore perspiciatis ut nostrum eligendi fugiat officia. Veritatis, ullam placeat.</p>
+                        <h3>Waar gaan we naartoe?</h3>
+                        <p>We gaan naar 8 verschillende planeten genaamd Mercurius,	Venus, Aarde, Mars,	Jupiter, Saturnus, Uranus, Neptunus en	Pluto dit zijn alle planeten dat we tot nu toe naar kunnen elk planeet heeft zijn unieke "land".</p>
                     </div>
                 </div>
                 <div class="travel">
                     <div class="content">
-                        <h3>Titel</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quasi ea laborum, delectus omnis autem nulla eius, corporis tenetur praesentium illo inventore. Molestiae debitis iure mollitia voluptatibus neque blanditiis eveniet quas nesciunt animi asperiores eum provident unde commodi voluptates, suscipit dolore perspiciatis ut nostrum eligendi fugiat officia. Veritatis, ullam placeat.</p>
+                        <h3>Is dat wel veilig?</h3>
+                        <p>ja! het manier van reizen ,het aankomen en daar wonen is allemaal vielig! vanwege het feit dat onze onderzoekers en engineer alles hebben gedaan om het veilig te maken. Je krijgt ook bepaalde kleren en stoffen om jezelf te beschremen tegen alles wat er kon gebeuren ookal is het hitte, kou of gas je bent bevieligd dus waar wat je op?  </p>
                     </div>
                     <div class="image">
-                        <img src="img/gate2.jpeg" alt="travel" />
+                        <img src="img/saturn.jpg" alt="travel" />
                     </div>
                 </div>
             </div>

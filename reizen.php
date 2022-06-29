@@ -13,12 +13,8 @@
 <body>
     <div id="bg"> </div>
     <?php
-    session_start();
-    include_once "nav.php";
+    include_once "includes/nav.php";
     include_once "connectie/pdo.php";
-    $stmt = $connect->prepare("SELECT * FROM reizen WHERE reisID = :ID");
-    $stmt->execute([':ID' => $_GET['id']]);
-    $data = $stmt->fetch();
     ?>
 
     <div class="container">
@@ -62,7 +58,7 @@
             <div class="row_3 ruimteschip">
                 <h1 class="HR" >ruimteschip</h1>
                 <label class="labelR1" for=""> klasse 3</label>
-                <a class="ruimteB moveR reisbuttn1" href="connectie/boeking.php?id=<?php echo $data["reisID"]; ?>">499 Euro</a>
+                <button class="ruimteB moveR reisbutton1">499 Euro</button>
 
                 <label class="labelR2" for=""> klasse 2</label>
                 <button class="ruimteB moveR2 reisbutton2">549 Euro</button>
@@ -74,6 +70,7 @@
             <div class="row_3 wormhole">
                 <h1 class="HW">Wormgat</h1>
                 <button class="wormportB moveW reisbutton4">899 Euro</button>
+                <button class="afrekenen">afrekenen</button>
             </div>
             <div class="row_3 teleport">
                 <h1 class="HT">Teleportatie</h1>

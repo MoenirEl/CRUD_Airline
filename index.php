@@ -24,7 +24,7 @@
 
     <div id="bg"> </div>
     <?php
-    include_once "nav.php";
+    include_once "includes/nav.php";
     require_once "connectie/pdo.php";
     $sql = "SELECT * FROM reizen";
     $stmt = $connect->prepare($sql);
