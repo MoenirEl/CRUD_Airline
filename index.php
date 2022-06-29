@@ -75,10 +75,10 @@
                             </div>
                             <?php if (isset($_SESSION['name'])) {
                                     if ($_SESSION['name'] == "admin" || $_SESSION['name'] == "user" ) {
-                                        include_once "button.php";// ik moest hier een heel nieuw bestand voor maken omdat anders de reisID niet mee ging.
+                                        echo ' <button  type="submit"  id="indexformbutton" >verzend</button> ';
                                     }
                                     } else {
-                                        echo ' <button  type="submit"  id="indexformbutton" >verzend</button> ';
+                                        echo ("u moet eerst inloggen of registreren om een boeking te kunnen maken.");
                                     }?>
                         </form>
             </div>
