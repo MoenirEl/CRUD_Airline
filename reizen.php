@@ -13,13 +13,12 @@
 <body>
     <div id="bg"> </div>
     <?php
+    session_start();
     include_once "includes/nav.php";
     include_once "connectie/pdo.php";
-    $sql = "SELECT * FROM reizen WHERE naam = :Naam";
-    $stmt = $connect->prepare($sql);
-    $stmt->bindParam(":Naam", $_POST['Naar']);
-    $stmt->execute();
-    $result = $stmt->fetch();
+    $stmt = $connect->prepare("SELECT * FROM reizen WHERE reisID = :ID");
+    $stmt->execute([':ID' => $_GET['id']]);
+    $data = $stmt->fetch();
     ?>
 
     <div class="container">
@@ -40,9 +39,9 @@
                 </form>
             </div>
             <div class="col-3 zupper">
-                <form action="#">
+                <form action="boeking.php" id="boekingform" method="post">
                     <label for="">personen</label>
-                    <select name="">
+                    <select name="personen">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -53,8 +52,7 @@
                 </form>
             </div>
             <div class="col-3"></div>
-            <?php # foreach ($result as $re) { ?>
-            <?php # echo $re['10']; }?>
+            
 
         </div>
         <div class="white_space_small"></div>
@@ -64,23 +62,22 @@
             <div class="row_3 ruimteschip">
                 <h1 class="HR" >ruimteschip</h1>
                 <label class="labelR1" for=""> klasse 3</label>
-                <button class="ruimteB moveR">499 Euro</button>
+                <a class="ruimteB moveR reisbuttn1" href="connectie/boeking.php?id=<?php echo $data["reisID"]; ?>">499 Euro</a>
 
                 <label class="labelR2" for=""> klasse 2</label>
-                <button class="ruimteB moveR2">549 Euro</button>
+                <button class="ruimteB moveR2 reisbutton2">549 Euro</button>
 
                 <label class="labelR3" for=""> klasse 1</label>
-                <button class="ruimteB moveR3">599 Euro</button>
+                <button class="ruimteB moveR3 reisbutton3">599 Euro</button>
 
             </div>
             <div class="row_3 wormhole">
                 <h1 class="HW">Wormgat</h1>
-                <button class="wormportB moveW">899 Euro</button>
-                <button class="afrekenen">afrekenen</button>
+                <button class="wormportB moveW reisbutton4">899 Euro</button>
             </div>
             <div class="row_3 teleport">
                 <h1 class="HT">Teleportatie</h1>
-                <button class="wormportB moveT ">999 Euro</button>
+                <button class="wormportB moveT reisbutton5">999 Euro</button>
 
 
             </div>
@@ -93,6 +90,7 @@
     </div>
     <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/boeking.js"></script>
 
 </body>
 

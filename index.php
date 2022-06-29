@@ -37,7 +37,7 @@
         <div class="textbox">
             <h1  id="wittext" >heeft u ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
-            <form action="reizen.php" method="post">
+            <form action="reizen.php" method="post" id="indexform">
         <div class="uniblok">
                    
 
@@ -73,8 +73,14 @@
                                     <?php } ?>
                                 </select>
                             </div>
+                            <?php if (isset($_SESSION['name'])) {
+                                    if ($_SESSION['name'] == "admin" || $_SESSION['name'] == "user" ) {
+                                        include_once "button.php";// ik moest hier een heel nieuw bestand voor maken omdat anders de reisID niet mee ging.
+                                    }
+                                    } else {
+                                        echo ' <button  type="submit"  id="indexformbutton" >verzend</button> ';
+                                    }?>
                         </form>
-                            <button  type="submit"  id="indexformbutton" >verzend</button>
             </div>
         </div>
 

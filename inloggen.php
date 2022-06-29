@@ -92,13 +92,6 @@
     </div>
   </div>
   <?php
-  session_start();
-  if (isset($_SESSION['name'])) {
-    //echo "gelukt";
-  } else {
-    //echo 'niet gelukt';
-  }
-
   ?>
 </body>
 
