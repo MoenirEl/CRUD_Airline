@@ -50,17 +50,18 @@
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" name="username" placeholder="Enter your username" required>
+                <input type="text" name="username" placeholder="Typ je gebruikersnaam" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="text" name="password" placeholder="Enter your password" required>
+                <input type="text" name="password" placeholder="Typ je wachtwoord" required>
               </div>
-              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="text"><a href="#">Wachtwoord vergeten?</a></div>
               <div class="button input-box">
                 <input type="submit" value="Login">
               </div>
-              <div class="text sign-up-text">Don't have an account? <label for="flip">Signup now</label></div>
+              <div class="text sign-up-text">Geen account? <label for="flip">Schrijf je nu in!</label></div>
+              <div class="text back-to-home"><a href="index.php">Terug?</a></div>
             </div>
           </form>
         </div>
@@ -70,18 +71,18 @@
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
-                <input type="text" name="username" placeholder="Enter your username" required><br />
+                <input type="text" name="username" placeholder="Typ je gebruikersnaam" required><br />
               </div>
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" name="password" placeholder="Enter your password" required><br />
+                <input type="text" name="password" placeholder="Typ je wachtwoord" required><br />
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="email" name="mail" placeholder="Enter your e-mail" required><br />
+                <input type="email" name="mail" placeholder="Typ je Email" required><br />
               </div>
               <div class="button input-box">
-                <input type="submit" value="Submit" name="submitknop">
+                <input type="submit" value="Verzend" name="submitknop">
               </div>
               <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
             </div>

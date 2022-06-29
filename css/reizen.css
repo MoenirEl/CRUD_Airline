@@ -4,6 +4,7 @@
 }
 
 body {
+  color: white;
   background-color: black;
 }
 
@@ -31,7 +32,6 @@ body {
   align-self: self-start;
   height: 10%;
   width: 50%;
-  background-color: aquamarine;
 }
 
 .zupper {
@@ -61,7 +61,7 @@ body {
   position: relative;
   height: 50%;
   width: 35%;
-  background-color: #b50d13;
+  background-color: rgb(75, 74, 74);
 }
 
 .col-3 {
