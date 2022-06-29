@@ -4,6 +4,7 @@
   padding: 0;
   font-family: 'Space Mono', monospace;
   font-family: 'Trispace', sans-serif;
+  color: white;
 }
 
 #bg {
@@ -355,16 +356,19 @@ form{
 
   .reisnaarform {
     font-size: 8px;
-    bottom: 53px;
+    bottom: 50px;
+    left: 20px;
   }
 
 
   .reisvanform {
     font-size: 9px;
+    left: 20px;
   }
 
   .routeform {
-    font-size: 9px;
+    font-size: 8px;
+    left: 20px;
   }
 
   .contact {
@@ -595,315 +599,18 @@ form{
   }
 }
 
-
-
-
-
-@media only screen and (max-width: 1350px) {
-
-  button[type=submit] {
-    right: 368px;
-  }
-}
-
-@media only screen and (max-width: 1325px) {
-
-  button[type=submit] {
-    right: 345px;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-
-  button[type=submit] {
-    right: 300px;
-  }
-
-  .reisnaar form {
-    font-size: 12px;
-    bottom: 46px;
-
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-
-  button[type=submit] {
-    right: 280px;
-  }
-
-  .reisnaar form {
-    font-size: 11px;
-    bottom: 50px;
-  }
-
-  .reisvan form {
-    font-size: 15px;
-  }
-
-  .routeblok form {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 1050px) {
-
-  button[type=submit] {
-    right: 270px;
-  }
-
-  .reisnaar form {
-    font-size: 10px;
-    bottom: 46px;
-  }
-
-
-  .reisvan form {
-    font-size: 13px;
-  }
-
-  .routeblok form {
-    font-size: 13px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-
-  button[type=submit] {
-    right: 260px;
-  }
-}
-
-@media only screen and (max-width: 769px) {
-
-  button[type=submit] {
-    right: 190px;
-  }
-
-  .reisnaar form {
-    font-size: 8px;
-    bottom: 53px;
-  }
-
-
-  .reisvan form {
+@media only screen and (max-width: 426px){
+  .reisvanform {
     font-size: 9px;
-  }
-
-  .routeblok form {
-    font-size: 9px;
-  }
-  .contact {
-    width: 300px;
-    height: 350px;
-  }
-  
-  #login {
-    width: 300px;
-    height: 350px;
- 
-  }
-  .col-2 {
-    height: 350px;
-    width: 300px;
-
-  }
-  .login_welkom {
-    font-size: 25px;
-    left: 30px;
-  }
-  
-  .contact_welkom {
-    font-size: 30px;
-    left: 35px;
-    top: 0px;
-  }
-  
-  .buttonknop {
-    left: 50px;
-    top: 100px;
-  }
-  
-  .buttonknop2 {
-    left: 50px;
-    top: 150px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-
-  button[type=submit] {
-    right: 0px;
-    width: 55px;
-    height: 30px;
-    right: 25px;
-  }
-
-  .reisnaar form {
-    font-size: 9px;
-    bottom: 0px;
-    right: 0px;
-    width: 250px;
-    height: 20px;
-    bottom: 70px;
-    left: 30px;
-  }
-
-
-  .reisvan form {
-    font-size: 9px;
-    bottom: 0px;
     width: 200px;
     height: 20px;
     bottom: 50px;
+    left: -0px;
   }
+}
 
-  .routeblok form {
-    font-size: 9px;
-    left: 0px;
-    bottom: 0px;
-    width: 200px;
-    height: 20px;
-    bottom: 50px;
-  }
 
-  .contact {
-    width: 300px;
-    height: 200px;
-  }
-  
-  #login {
-    width: 300px;
-    height: 200px;
- 
-  }
-  .col-2 {
-    height: 200px;
-    width: 300px;
 
-  }
-  .login_welkom {
-    font-size: 25px;
-    left: 30px;
-  }
-  
-  .contact_welkom {
-    font-size: 30px;
-    left: 35px;
-    top: 0px;
-  }
-  
-  .buttonknop {
-    left: 50px;
-    top: 50px;
-  }
-  
-  .buttonknop2 {
-    left: 50px;
-    top: 100px;
-  }
-  .textbox{
-    top: 0px;
-  }
-  #wittext {
-    font-size: 15px;
-    
-  }
-  .uniblok{
-    flex-direction: column; 
-    justify-content: space-evenly;
-    height:300px ;
-    top: 0px;
-
-  }
-  }
-  @media only screen and (max-width: 476px) {
-
-    button[type=submit] {
-      right: 0px;
-      width: 55px;
-      height: 30px;
-      right: 25px;
-    }
-  
-    .reisnaar form {
-      font-size: 9px;
-      bottom: 0px;
-      right: 0px;
-      width: 250px;
-      height: 20px;
-      bottom: 70px;
-      left: 30px;
-    }
-  
-  
-    .reisvan form {
-      font-size: 9px;
-      bottom: 0px;
-      width: 200px;
-      height: 20px;
-      bottom: 50px;
-    }
-  
-    .routeblok form {
-      font-size: 9px;
-      left: 0px;
-      bottom: 0px;
-      width: 200px;
-      height: 20px;
-      bottom: 50px;
-    }
-  
-    .contact {
-      width: 300px;
-      height: 200px;
-    }
-    
-    #login {
-      width: 300px;
-      height: 200px;
-   
-    }
-    .col-2 {
-      height: 200px;
-      width: 300px;
-  
-    }
-    .login_welkom {
-      font-size: 25px;
-      left: 30px;
-    }
-    
-    .contact_welkom {
-      font-size: 30px;
-      left: 35px;
-      top: 0px;
-    }
-    
-    .buttonknop {
-      left: 50px;
-      top: 50px;
-    }
-    
-    .buttonknop2 {
-      left: 50px;
-      top: 100px;
-    }
-    .textbox{
-      top: 0px;
-    }
-    #wittext {
-      font-size: 15px;
-      
-    }
-    .uniblok{
-      flex-direction: column; 
-      justify-content: space-evenly;
-      height:300px ;
-      top: 0px;
-  
-    }
-    }
 
 
 

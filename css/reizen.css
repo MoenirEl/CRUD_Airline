@@ -272,6 +272,9 @@ body {
 }
 
 @media only screen and (max-width: 1025px) {
+  .up_side{
+    font-size: 12px;
+  }
   .HT {
     left: 5px;
   }
@@ -418,6 +421,9 @@ body {
 }
 
 @media only screen and (max-width: 426px) {
+  .up_side{
+    font-size: 8px;
+  }
   .HT {
     left: 0px;
     font-size: 25px;
