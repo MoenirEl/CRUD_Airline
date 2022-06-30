@@ -18,27 +18,35 @@
     <nav>
         <img id="logo" src="img/YR.png" alt="">
         <a href="index.php">Home</a>
-        <?php 
-            session_start();
-            if (isset($_SESSION['name'])) {
-                if ($_SESSION['authority'] == "admin" ) {
-                    echo '<a href="adminkeuze.php">Admin page</a>';
-                }
-            }
-            else {
-                echo '<a href="inloggen.php">Login</a>';
-            }
-            
+        <?php
+        session_start();
         ?>
         <a href="info.php">Info</a>
         <a href="about.php">Over ons</a>
         <a href="contact.php">Contact</a>
-        <?php
-        if (isset($_SESSION['name'])) {
-            echo '<a href="connectie/sessionD.php">Uitloggen</a>';
-        }
-        ?>
-        <!-- mijn account -->
+
+        <div class="dropdown">
+            <button class="mijnaccount"><img src="img/user.png"></button>
+            <div class="dropdown-content ">
+                <?php
+                if (isset($_SESSION['name'])) {
+                    if ($_SESSION['authority'] == "admin") {
+                        echo '<a href="adminkeuze.php">Admin page</a>';
+                    }
+                } else {
+                    echo '<a href="inloggen.php">Login</a>';
+                } 
+                if (isset($_SESSION['name'])) {
+                    echo '<a href="/CRUD_Space/user/user.php">Mijn account</a>';
+                    echo '<a href="/CRUD_Space/user/boeking.php"> boeking </a>';
+                    echo '<a href="connectie/sessionD.php">Uitloggen</a>';
+                }
+                ?>
+                
+
+            </div>
+        </div>
+
     </nav>
 
 

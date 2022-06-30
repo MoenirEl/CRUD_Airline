@@ -28,8 +28,8 @@
         <div class="white_space_small"></div>
         <div class="left_side"></div>
 
-            <div class="right_side">
-            <form action="afrekenen.php">
+            <div class="right_side" >
+            <form action="afrekenen.php" method="POST" >
                 <div class="col-3">
                     <label for="Reis">reis</label>
                     <select name="Reis" id="Reis">

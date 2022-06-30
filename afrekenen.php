@@ -12,7 +12,7 @@
     
 
 
-    <script src="js/particles.min.js" ></script>
-    <script src="js/custom.js" ></script>
+    <script type="text/javascript" src="js/particles.min.js" ></script>
+    <script type="text/javascript" src="js/custom.js" ></script>
 </body>
 </html>
