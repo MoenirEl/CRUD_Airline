@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&family=Trispace&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/googlefonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&family=Trispace&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/googlefonts.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="css/nav.css">
 
     <link rel="stylesheet" href="./dist/tavo-calendar.css" />
     <title>HoofdpaginaS</title>
@@ -31,10 +31,12 @@
     $stmt->execute();
     $result = $stmt->fetchAll();
     ?>
-      
+
 
     <div class="container">
+        <div class="up_space" ></div>
         <div class="textbox">
+<<<<<<< HEAD
             <h1  id="wittext" >heeft u ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
             <form action="reizen.php" method="post" id="indexform">
@@ -82,11 +84,31 @@
                                     }?>
                         </form>
             </div>
+=======
+            <h1 id="wittext">heeft u ooit over nagedacht om naar de ruimte te gaan?</h1>
+>>>>>>> f5b02bf9530b2a2c6bf53f3407ee875297970511
         </div>
 
-        </div>
+            <div class="uniblok">
 
-        <div class="onderblok">
+
+                <?php if (isset($_SESSION['name'])) {
+                        if ($_SESSION['name'] == "admin" || $_SESSION['name'] == "user") {
+                            echo '<form action="reizen.php" method="post" id="indexform"> 
+                         <button  type="submit"  id="indexformbutton" >verzend</button>  </form>  ';
+                        }
+                    } else {
+                        echo '<form action="inloggen.php" method="post" id="indexform"> 
+                        <button type="submit" id="indexformbutton">inloggen</button>
+                        </form>';
+                    } ?> 
+                            
+    </div>
+    </div>
+
+    </div>
+
+    <div class="onderblok">
         <div class="col-2">
             <div id="login">
                 <h1 class="login_welkom">Log in of register </h1>
@@ -111,4 +133,5 @@
     <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
 </body>
+
 </html>
