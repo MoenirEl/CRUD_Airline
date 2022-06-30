@@ -17,27 +17,28 @@
 <body>
     <nav>
         <img id="logo" src="img/YR.png" alt="">
-        <a href="index.php">home</a>
+        <a href="index.php">Home</a>
         <?php 
             session_start();
             if (isset($_SESSION['name'])) {
                 if ($_SESSION['authority'] == "admin" ) {
-                    echo '<a href="adminkeuze.php">admin page</a>';
+                    echo '<a href="adminkeuze.php">Admin page</a>';
                 }
             }
             else {
-                echo '<a href="inloggen.php">login</a>';
+                echo '<a href="inloggen.php">Login</a>';
             }
             
         ?>
-        <a href="info.php">info</a>
+        <a href="info.php">Info</a>
         <a href="about.php">Over ons</a>
-        <a href="contact.php">contact</a>
+        <a href="contact.php">Contact</a>
         <?php
         if (isset($_SESSION['name'])) {
-            echo '<a href="connectie/sessionD.php">uitloggen</a>';
+            echo '<a href="connectie/sessionD.php">Uitloggen</a>';
         }
         ?>
+        <!-- mijn account -->
     </nav>
 
 

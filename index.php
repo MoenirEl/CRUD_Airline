@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
 
-    <link rel="stylesheet" href="./dist/tavo-calendar.css" />
     <title>HoofdpaginaS</title>
 </head>
 
@@ -38,31 +37,27 @@
         <div class="textbox">
             <h1 id="wittext">heeft u ooit over nagedacht om naar de ruimte te gaan?</h1>
         </div>
-
             <div class="uniblok">
-
-
-                <?php if (isset($_SESSION['name'])) {
-                        if ($_SESSION['name'] == "admin" || $_SESSION['name'] == "user") {
+                <div class="text_box" >
+                    <h3 id="midtext" >Hier kan je overal naar toe gaan waar je van droomde. Van venus naar saturnus jouw keuze! waar wacht je op? als je meer wilt weten ga naar info en als je wilt boeken login!</h3>
+                </div>
+                <?php if (isset($_SESSION['authority'])) {
+                        if ($_SESSION['authority'] == "admin" || $_SESSION['authority'] == "user") {
                             echo '<form action="reizen.php" method="post" id="indexform"> 
-                         <button  type="submit"  id="indexformbutton" >verzend</button>  </form>  ';
+                         <button  type="submit"  id="indexformbutton">boeken</button>  </form>  ';
                         }
                     } else {
                         echo '<form action="inloggen.php" method="post" id="indexform"> 
                         <button type="submit" id="indexformbutton">inloggen</button>
                         </form>';
-                    } ?> 
-                            
+                    } ?>               
     </div>
     </div>
-
-    </div>
-
     <div class="onderblok">
         <div class="col-2">
             <div id="login">
-                <h1 class="login_welkom">Log in of register </h1>
-                <button onclick="document.location='inloggen.php'" class="button login buttonknop2"> log in of register</button>
+                <h1 class="login_welkom">meer weten?</h1>
+                <button onclick="document.location='info.php'" class="button login buttonknop2"> info</button>
             </div>
         </div>
         <div class="col-2">
@@ -73,12 +68,10 @@
         </div>
     </div>
     </div>
-    <div id="footer">
-
         <?php
         include_once "includes/footer.php";
         ?>
-    </div>
+
     <script src="js/index.js"></script>
     <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
