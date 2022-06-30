@@ -42,8 +42,8 @@
             <div class="uniblok">
 
 
-                <?php if (isset($_SESSION['name'])) {
-                        if ($_SESSION['name'] == "admin" || $_SESSION['name'] == "user") {
+                <?php if (isset($_SESSION['authority'])) {
+                        if ($_SESSION['authority'] == "admin" || $_SESSION['authority'] == "user") {
                             echo '<form action="reizen.php" method="post" id="indexform"> 
                          <button  type="submit"  id="indexformbutton" >verzend</button>  </form>  ';
                         }
