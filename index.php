@@ -36,57 +36,7 @@
     <div class="container">
         <div class="up_space" ></div>
         <div class="textbox">
-<<<<<<< HEAD
-            <h1  id="wittext" >heeft u ooit over nagedacht om naar de ruimte te gaan?</h1>
-        </div>
-            <form action="reizen.php" method="post" id="indexform">
-        <div class="uniblok">
-                   
-
-                <div class="routeblok">
-                    <div class="routeform" >
-                        <label for="Reis">reis</label>
-                        <select name="Reis" id="Reis">
-                            <option selected></option>
-                            <option value="retourreis">Retourreis</option>
-                            <option value="enkele reis">Enkele reis</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="reisvan">
-                    <div class="reisvanform" >
-                        <label for="van">Vertrek van</label>
-                        <select name="Van" id="Van">
-                            <option selected></option>
-                            <?php foreach ($result as $re) { ?>
-                                <option name="vertrek" ><?php echo $re["naam"]; ?></option>
-                                <?php } ?>
-                            </select>
-                        </div>
-                        
-                    </div>
-                    <div class="reisnaar">
-                        <div class="reisnaarform" >
-                            <label for="Naar">Aankomst op</label>
-                            <select name="Naar" id="Naar">
-                                <option selected></option>
-                                <?php foreach ($result as $re) { ?>
-                                    <option name="aankomst" ><?php echo $re["naam"]; ?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                            <?php if (isset($_SESSION['name'])) {
-                                    if ($_SESSION['authority'] == "admin" || $_SESSION['authority'] == "user" ) {
-                                        echo ' <button  type="submit"  id="indexformbutton" >verzend</button> ';
-                                    }
-                                    } else {
-                                        echo ("u moet eerst inloggen of registreren om een boeking te kunnen maken.");
-                                    }?>
-                        </form>
-            </div>
-=======
             <h1 id="wittext">heeft u ooit over nagedacht om naar de ruimte te gaan?</h1>
->>>>>>> f5b02bf9530b2a2c6bf53f3407ee875297970511
         </div>
 
             <div class="uniblok">
