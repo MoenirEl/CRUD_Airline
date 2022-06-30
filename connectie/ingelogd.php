@@ -23,7 +23,8 @@ if($result == 0){
     if(count($resultaat) > 0){
         session_start();
         $_SESSION['id'] = $resultaat["gebruikerID"];
-        $_SESSION['name'] = "user";
+        $_SESSION['name'] = $resultaat["username"];
+        $_SESSION['authority'] = "user";
         header("Location: ../index.php");
     } else {
         echo "username or password not found";
@@ -34,7 +35,8 @@ if($result == 0){
 if(count($result) > 0){
     session_start();
     $_SESSION['id'] = $result["ID"];
-    $_SESSION['name'] = "admin";
+    $_SESSION['name'] = $result["username"];
+    $_SESSION['authority'] = "admin";
     header("Location: ../index.php");
 } else {
     echo "username or password not found";

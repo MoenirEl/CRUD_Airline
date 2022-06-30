@@ -21,7 +21,7 @@
         <?php 
             session_start();
             if (isset($_SESSION['name'])) {
-                if ($_SESSION['name'] == "admin" ) {
+                if ($_SESSION['authority'] == "admin" ) {
                     echo '<a href="adminkeuze.php">admin page</a>';
                 }
             }
