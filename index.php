@@ -74,7 +74,7 @@
                                 </select>
                             </div>
                             <?php if (isset($_SESSION['name'])) {
-                                    if ($_SESSION['name'] == "admin" || $_SESSION['name'] == "user" ) {
+                                    if ($_SESSION['authority'] == "admin" || $_SESSION['authority'] == "user" ) {
                                         echo ' <button  type="submit"  id="indexformbutton" >verzend</button> ';
                                     }
                                     } else {
