@@ -51,6 +51,7 @@ $result = $stmt->fetchAll();
 
             <?php foreach ($result as $re) { ?>
                 <tr>
+                    <input type="hidden" naam="id" value="<?php echo $re['id'] ?>">
                     <td><?php echo $re["naam"]; ?></td>
                     <td><?php echo $re["kosten"]; ?></td>
                     <td><?php echo $re["startDatum"]; ?></td>
