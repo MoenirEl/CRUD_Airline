@@ -54,27 +54,7 @@
         <div class="white_space_small"></div>
         <div class="white_space_small2"></div>
 
-        <div class="bottom_side">
-            <div class="row_3 ruimteschip">
-                <h1 class="HR" >ruimteschip</h1>
-                <label class="labelR1" for=""> klasse 3</label>
-                <button class="ruimteB moveR reisbutton1">499 Euro</button>
 
-                <label class="labelR2" for=""> klasse 2</label>
-                <button class="ruimteB moveR2 reisbutton2">549 Euro</button>
-
-                <label class="labelR3" for=""> klasse 1</label>
-                <button class="ruimteB moveR3 reisbutton3">599 Euro</button>
-
-            </div>
-            <div class="row_3 wormhole">
-                <h1 class="HW">Wormgat</h1>
-                <button class="wormportB moveW reisbutton4">899 Euro</button>
-                <button class="afrekenen">afrekenen</button>
-            </div>
-            <div class="row_3 teleport">
-                <h1 class="HT">Teleportatie</h1>
-                <button class="wormportB moveT reisbutton5">999 Euro</button>
 
 
             </div>
@@ -92,3 +72,35 @@
 </body>
 
 </html>
+                <!-- <div class="routeblok">
+                    <div class="routeform">
+                        <label for="Reis">reis</label>
+                        <select name="Reis" id="Reis">
+                            <option selected></option>
+                            <option value="retourreis">Retourreis</option>
+                            <option value="enkele reis">Enkele reis</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="reisvan">
+                    <div class="reisvanform">
+                        <label for="van">Vertrek van</label>
+                        <select name="Van" id="Van">
+                            <option selected></option>
+                            <?php foreach ($result as $re) { ?>
+                                <option name="vertrek"><?php echo $re["naam"]; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="reisnaar">
+                    <div class="reisnaarform">
+                        <label for="Naar">Aankomst op</label>
+                        <select name="Naar" id="Naar">
+                            <option selected></option>
+                            <?php foreach ($result as $re) { ?>
+                                <option name="aankomst"><?php echo $re["naam"]; ?></option>
+                            <?php } ?>
+                        </select> -->
+                    </div>

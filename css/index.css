@@ -4,7 +4,7 @@
   padding: 0;
   font-family: 'Space Mono', monospace;
   font-family: 'Trispace', sans-serif;
-  color: white;
+  
 }
 
 #bg {
@@ -46,7 +46,15 @@ select {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 1200px;
+  height: auto;
+  background-color: #000;
+}
+.up_space{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
   background-color: #000;
 }
 
@@ -56,11 +64,11 @@ select {
   justify-content: center;
   flex-direction: row;
   position: relative;
-  border: 2px solid ;
+  border: 2px solid black;
   border-radius: 0px 0px 25px 25px;
   position: relative;
   height: 400px;
-  width: 100%;
+  width: 65%;
   background-color: #051937;
 }
 
@@ -70,7 +78,7 @@ select {
   justify-content: center;
   position: relative;
   top: 0px;
-  border: 2px solid ;
+  border: 2px solid black;
   border-radius: 25px 25px 0px 0px;
   position: relative;
   height: 150px;
@@ -78,6 +86,20 @@ select {
   background-color: #051937;
 }
 
+button[type=submit] {
+  border-radius: 25% 10%;
+  position: relative;
+  height: 60px;
+  width: 90px;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 .routeblok {
   display: flex;
   justify-content: center;
@@ -127,24 +149,6 @@ select {
   bottom: 50px;
   right: 50px;
   color: white;
-}
-
-
-button[type=submit] {
-  border-radius: 25% 10%;
-  position: relative;
-  right: 400px;
-  top: 40px;
-  height: 60px;
-  width: 90px;
-  border: none;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 12px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
 }
 
 [type=submit]:hover {
@@ -261,17 +265,7 @@ button[type=submit] {
   left: 100px;
   top: 150px;
 }
-form{
-  display: flex;
-  justify-content: baseline;
-  flex-direction: column;
-  top: 0px;
-  border: 2px solid ;
-  border-radius: 0px 0px 25px 25px;
-  position: relative;
-  height: 500px;
-  width: 65%;
-}
+ 
 
 @media only screen and (max-width: 1350px) {
 
