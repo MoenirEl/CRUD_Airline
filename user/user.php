@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/user.css">
 </head>
+
 <body>
-<a href="../index.php">home</a>
+    <div id="bg"></div>
+
+
     <?php
-    require_once "../connectie/pdo.php";   
+    require_once "../connectie/pdo.php";
     session_start();
-    if (isset($_SESSION['authority'])) {
-        if ($_SESSION['authority'] == "user" || $_SESSION['authority'] == "user") {
-            echo "hallo daar " . $_SESSION["name"];
-        } else{
-            header("Location: index.php");
-        }
-    }
-    else {
-        header("Location: index.php");
-    }
+    $sql = "SELECT * FROM users WHERE gebruikerID = :ID";
+    $stmt = $connect->prepare($sql);
+    $stmt->execute([':ID' => $_SESSION['id']]);
+    $result = $stmt->fetchAll();
+    ?>
+    <div class="container">
+        <div class="white_space"></div>
+        <div class="up_side"></div>
+        <div class="white_space"></div>
+        <div class="white_space_small"></div>
+        <div class="midblok">
+            <div class="welkom">
+                <?php
+                if (isset($_SESSION['authority'])) {
+                    if ($_SESSION['authority'] == "user" || $_SESSION['authority'] == "user") {
+                        echo "welkom " . $_SESSION["name"];
+                    } else {
+                        header("Location: index.php");
+                    }
+                } ?>
+            </div>
 
-$sql = "SELECT * FROM users WHERE gebruikerID = :ID";
-$stmt = $connect->prepare($sql);
-$stmt->execute([':ID' => $_SESSION['id']]);
-$result = $stmt->fetchAll();
-?>
 
-
-    <div class="tablebox">
-
-
-        <table>
             <?php foreach ($result as $re) { ?>
-                <ul>
-                    <li>gebruikersnaam: <?php echo $re["username"]; ?></li>
-                    <li>mail: <?php echo $re["mail"]; ?></li>
-                    <li>
-                        <a class="orange" href="useredit.php?id=<?php echo $re["gebruikerID"]; ?>">edit </a>
-                    </li>
-                </ul>
-                <a class="red" href="boeking.php?id=<?php echo $re["gebruikerID"]; ?>">boeking </a>
+                <form action="../index.php">
+                    <label for="">gebruikersnaam:</label>
+                    <input type="text" name="username" value=" <?php echo $re["username"]; ?>">
+                    <label for="">mail:</label>
+                    <input type="text" name="mail" value=" <?php echo $re["mail"]; ?>">
+                    <label for="">wachtwoord</label>
+                    <input type="text" name="wachtwoord" value=" ">
+                    <button type="submit">bevestigen</button>
+                </form>
+
             <?php
             }
             ?>
-        </table>
+        </div>
+        <div class="white_space_small"></div>
+        <div class="white_space_small2"></div>
+        <div class="bottom_side"></div>
+        <div class="white_space_small2"> </div>
+
     </div>
+    <script type="text/javascript" src="../js/particles.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
 </body>
+
 </html>
+
+<!-- <a class="orange" href="useredit.php?id=<?php echo $re["gebruikerID"]; ?>">edit </a> -->
