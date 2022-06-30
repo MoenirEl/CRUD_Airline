@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-<a href="../CRUD_Space/index.php">home</a>
+<a href="../index.php">home</a>
     <?php
-    require_once "connectie/pdo.php";   
+    require_once "../connectie/pdo.php";   
     session_start();
     if (isset($_SESSION['authority'])) {
-        if ($_SESSION['authority'] == "admin" ) {
-            echo "welkom terug " . $_SESSION["name"];
+        if ($_SESSION['authority'] == "user" || $_SESSION['authority'] == "user") {
+            echo "hallo daar " . $_SESSION["name"];
         } else{
             header("Location: index.php");
         }
@@ -22,9 +22,9 @@
         header("Location: index.php");
     }
 
-$sql = "SELECT * FROM users";
+$sql = "SELECT * FROM users WHERE gebruikerID = :ID";
 $stmt = $connect->prepare($sql);
-$stmt->execute();
+$stmt->execute([':ID' => $_SESSION['id']]);
 $result = $stmt->fetchAll();
 ?>
 
@@ -33,23 +33,15 @@ $result = $stmt->fetchAll();
 
 
         <table>
-            <tr>
-                <th>gebruikersnaam: </th>
-                <th>wachtwoord :</th>
-                <th>mail: </th>
-            </tr>
-
             <?php foreach ($result as $re) { ?>
-                <tr>
-                    <input type="hidden" naam="id" value="<?php echo $re['id'] ?>">
-                    <td><?php echo $re["naam"]; ?></td>
-                    <td><?php echo $re["kosten"]; ?></td>
-                    <td><?php echo $re["startDatum"]; ?></td>
-                    <td>
-                        <a class="orange" href="connectie/edit.php?id=<?php echo $re["reisID"]; ?>">edit </a>
-                    </td>
-                </tr>
-                <a class="red" href="connectie/delete.php?id=<?php echo $re["reisID"]; ?>">delete </a>
+                <ul>
+                    <li>gebruikersnaam: <?php echo $re["username"]; ?></li>
+                    <li>mail: <?php echo $re["mail"]; ?></li>
+                    <li>
+                        <a class="orange" href="useredit.php?id=<?php echo $re["gebruikerID"]; ?>">edit </a>
+                    </li>
+                </ul>
+                <a class="red" href="boeking.php?id=<?php echo $re["gebruikerID"]; ?>">boeking </a>
             <?php
             }
             ?>
