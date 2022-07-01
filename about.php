@@ -21,11 +21,21 @@
     <title>HoofdpaginaS</title>
 
 </head>
+<?php
+require_once "connectie/pdo.php";
+if (isset($_POST["verzenden"])) {
+    $sql = "INSERT INTO reviews (bericht) 
+    VALUES (:bericht)";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":bericht", $_POST['bericht']);
+    $stmt->execute();
+}
+?>
 <div id="bg"> </div>
 
 <body>
     <?php
-    include_once "includes/nav.php";
+    include "includes/nav.php";
     ?>
 
 
@@ -41,10 +51,30 @@
                         <p>Waarom hebben we dit bedrijf eigenlijk gemaakt? simpel we wouden dat mensen die ooit over nagedacht hadden "wat het zal zijn in de ruimte" een kans te geven om het te ervaren. Roy en Moenir hebben alles gedaan om het waar te maken en nu is het eindelijk tijd om jullie te laten zien wat we hebben bereikt. </p>
                         <p>Wat komt er in de toekomst? In de verre toekomst hopen we dat we verder kunnen gaan dan mensen ooit kunnen druven dromen. We hebben het dan over een anderen universums om dit mogelijk te maken zijn wel elke dag bezig om zo veel mogelijk dingen te verbeteren. Stap voor stap komen we naar ons goal. </p>
                     </div>
-                    <textarea name="review" placeholder="laat ons weten wat we kunnen verbeteren!" id="reviews" cols="30" rows="10"></textarea>
+                    <form action="" method="post">
+                        <div>
+                            <textarea name="bericht" placeholder="laat ons weten wat we kunnen verbeteren!" id="reviews" cols="30" rows="10"></textarea>
+                            <button type="submit" name="verzenden">verzend</button>
+                        </div>
+                    </form>
+                <div class="reveiwes">
+                    <?php
+                    $sql = "SELECT * FROM reviews";
+                    $stmt = $connect->prepare($sql);
+                    $stmt->execute();
+                    $result = $stmt->fetchAll();
+                    foreach ($result as $re) { ?>
+                        <div class="blok">
+                            <?php echo $re['bericht']; ?>
+                        </div>
+                    <?php
+                    }
+                    ?>
                 </div>
+                </div>
+
             </div>
-            
+
         </div>
 
     </div>
@@ -60,4 +90,3 @@
 
 
 </html>
-
