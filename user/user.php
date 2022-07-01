@@ -45,7 +45,7 @@
                     <input type="text" name="username" value=" <?php echo $re["username"]; ?>">
                     <label for="">mail:</label>
                     <input type="text" name="mail" value=" <?php echo $re["mail"]; ?>">
-                    <label for="">wachtwoord</label>
+                    <label for="">wachtwoord:</label>
                     <input type="text" name="wachtwoord" value=" ">
                     <button type="submit">bevestigen</button>
                 </form>

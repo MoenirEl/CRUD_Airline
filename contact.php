@@ -33,7 +33,7 @@
       <div class="right-side">
         <div class="topic-text">contact ons!</div>
         <p> heb je vragen of gewoon wat chatten contact ons!</p>
-        <form action="#">
+        <form action="index.php">
           <div class="input-box">
             <input type="text" placeholder="typ hier je naam">
           </div>
@@ -43,8 +43,8 @@
           <div class="input-box message-box">
             <textarea placeholder="Stuur ons een berichtje!" name="contact ons" id="" cols="50" rows="4"></textarea>
              </div>
+             <button type="submit" onclick="document.location='index.php'" class="button ">verzend</button>
         </form>
-            <button type="submit" onclick="document.location='index.php'" class="button ">verzend</button>
 
   </div>
   </div>
