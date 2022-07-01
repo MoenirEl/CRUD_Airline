@@ -54,7 +54,7 @@
             <input type="text" placeholder="typ hier je email" name="email">
           </div>
           <div class="input-box message-box">
-            <textarea placeholder="Stuur ons een berichtje!" name="contact ons" id="" cols="50" rows="4"></textarea>
+            <textarea placeholder="Stuur ons een berichtje!" name="bericht" id="" cols="50" rows="4"></textarea>
              </div>
              <button type="submit" name="verzenden" class="button ">verzend</button>
             </form>

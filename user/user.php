@@ -57,9 +57,28 @@
             ?>
         </div>
         <div class="white_space_small"></div>
-        <div class="white_space_small2"></div>
-        <div class="bottom_side"></div>
-        <div class="white_space_small2"> </div>
+
+        <div class="bottom_side">
+            <?php
+            $sql = "SELECT startDatum, manierVanReizen, Personen, reis, naam, naarnaam, reisID FROM reizen WHERE user = $_SESSION[id]";
+            $stmt = $connect->prepare($sql);
+            $stmt->execute();
+            $result = $stmt->fetchAll();
+            foreach ($result as $re) { ?>
+                <div class="blok">
+                    <?php echo $re['reis']; ?><br>
+                    <?php echo "Van " . $re['naam'];?><br>
+                    <?php echo "Naar " .$re['naarnaam'];?><br>
+                    <?php echo "datum " . $re['startDatum'] ;?><br>
+                    <?php echo $re['Personen']. " person(en)" ?><br>
+                    <?php echo "Hoe " . $re['manierVanReizen'];?><br>
+                    <a class="red" href="../connectie/delete.php?id=<?php echo $re["reisID"]; ?>">delete </a>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
+
 
     </div>
     <script type="text/javascript" src="../js/particles.min.js"></script>
