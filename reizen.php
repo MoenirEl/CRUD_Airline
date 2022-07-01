@@ -15,29 +15,54 @@
     <?php
     include_once "includes/nav.php";
     include_once "connectie/pdo.php";
+    $sql = "SELECT * FROM reizen";
+    $stmt = $connect->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
     ?>
 
     <div class="container">
         <div class="white_space"></div>
-        <div class="up_side">
-            <p>u heeft de reis van</p><?php echo $_POST['Van'];?>
-            <p>naar</p><?php echo $_POST['Naar'];?>
-            <p>met</p><?php echo $_POST['Reis'];?>
-            <p>geselecteerd.</p>
-        </div>
+        <div class="up_side"> </div>
         <div class="white_space"></div>
         <div class="white_space_small"></div>
         <div class="left_side"></div>
-        <div class="right_side">
-            <div class="col-3">
-                <form action="#">
-                    <input type="date" id="start" name="trip-start" value="2022-06-23" min="2022-06-31" max="2023-10-25">
-                </form>
-            </div>
-            <div class="col-3 zupper">
-                <form action="boeking.php" id="boekingform" method="post">
+
+            <div class="right_side" >
+            <form action="afrekenen.php" method="POST" >
+                <div class="col-3">
+                    <label for="Reis">reis</label>
+                    <select name="Reis" id="Reis">
+                        <option selected></option>
+                        <option value="retourreis">Retourreis</option>
+                        <option value="enkele reis">Enkele reis</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="van">Vertrek van</label>
+                    <select name="Van" id="Van">
+                        <option selected></option>
+                        <?php foreach ($result as $re) { ?>
+                            <option name="vertrek"><?php echo $re["naam"]; ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="Naar">Aankomst op</label>
+                    <select name="Naar" id="Naar">
+                        <option selected></option>
+                        <?php foreach ($result as $re) { ?>
+                            <option name="aankomst"><?php echo $re["naam"]; ?></option>
+                        <?php } ?>
+                    </select> 
+                </div>
+                <div class="col-3">
+                    <label for="date">vertrekken</label>
+                    <input type="date" id="Start" name="trip-start" value="2022-06-23" min="2022-06-31" max="2023-10-25">
+                </div>
+                <div class="col-3">
                     <label for="">personen</label>
-                    <select name="personen">
+                    <select id="Personen" name="personen">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -45,21 +70,25 @@
                         <option value="5">5</option>
                         <option value="6">6</option>
                     </select>
-                </form>
+                </div>
+                <div class="col-3">
+                 <label for="Reis">reis</label>
+                    <select name="manier" id="Manier">
+                        <option selected></option>
+                        <option value="ruimteschip">Ruimteschip</option>
+                        <option value="teleportatie ">Teleportatie </option> 
+                        <option value="wormgat">wormgat</option> 
+                    </select>  
+                </div>
+                <div class="col-3">
+                    <button class="afrekenen" >afrekenen</button>
+                </div>
+        </form>
             </div>
-            <div class="col-3"></div>
-            
-
-        </div>
-        <div class="white_space_small"></div>
-        <div class="white_space_small2"></div>
+<div class="white_space_small2" ></div>
+<div class="bottom_side" ></div>
 
 
-
-
-            </div>
-        </div>
-        <div class="white_space_small2"></div>
         <?php
         include_once "includes/footer.php";
         ?>
@@ -67,40 +96,23 @@
     </div>
     <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-    <script src="js/boeking.js"></script>
+                           
 
 </body>
 
 </html>
-                <!-- <div class="routeblok">
+<!-- <div class="routeblok">
                     <div class="routeform">
-                        <label for="Reis">reis</label>
-                        <select name="Reis" id="Reis">
-                            <option selected></option>
-                            <option value="retourreis">Retourreis</option>
-                            <option value="enkele reis">Enkele reis</option>
-                        </select>
+                        
                     </div>
                 </div>
                 <div class="reisvan">
                     <div class="reisvanform">
-                        <label for="van">Vertrek van</label>
-                        <select name="Van" id="Van">
-                            <option selected></option>
-                            <?php foreach ($result as $re) { ?>
-                                <option name="vertrek"><?php echo $re["naam"]; ?></option>
-                            <?php } ?>
-                        </select>
+                       
                     </div>
 
                 </div>
                 <div class="reisnaar">
                     <div class="reisnaarform">
-                        <label for="Naar">Aankomst op</label>
-                        <select name="Naar" id="Naar">
-                            <option selected></option>
-                            <?php foreach ($result as $re) { ?>
-                                <option name="aankomst"><?php echo $re["naam"]; ?></option>
-                            <?php } ?>
-                        </select> -->
-                    </div>
+                       
+</div>
