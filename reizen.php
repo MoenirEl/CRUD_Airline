@@ -29,7 +29,7 @@
         <div class="left_side"></div>
 
             <div class="right_side" >
-            <form action="afrekenen.php" method="POST" >
+            <form action="afrekenen.php" method="post" >
                 <div class="col-3">
                     <label for="Reis">reis</label>
                     <select name="Reis" id="Reis">
@@ -81,7 +81,7 @@
                     </select>  
                 </div>
                 <div class="col-3">
-                    <button class="afrekenen" >afrekenen</button>
+                    <button class="afrekenen" name="verzenden" >afrekenen</button>
                 </div>
         </form>
             </div>

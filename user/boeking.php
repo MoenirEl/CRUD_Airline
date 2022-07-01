@@ -26,7 +26,6 @@
     $stmt = $connect->prepare($sql);
     $stmt->execute([':ID' => $_SESSION['id']]);
     $result = $stmt->fetchAll();
-
     foreach ($result as $re) {
         echo $re["boekingID"];
         echo $re["gebruikerID"];
