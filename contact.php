@@ -8,6 +8,19 @@
 </head>
 
 <body>
+  <?php session_start();
+  require_once "connectie/pdo.php";
+  if (isset($_POST["verzenden"])) {
+    $sql = "INSERT INTO contact (naam,email,bericht) 
+    VALUES (:naam,:email,:bericht)";
+
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":naam", $_POST['naam']);
+    $stmt->bindParam(":email", $_POST['email']);
+    $stmt->bindParam(":bericht", $_POST['bericht']);
+    $stmt->execute();
+    header("Location: index.php");}
+     ?>
   <div class="container">
     <div class="content">
       <div class="left-side">
@@ -32,19 +45,20 @@
       </div>
       <div class="right-side">
         <div class="topic-text">contact ons!</div>
-        <p> heb je vragen of gewoon wat chatten contact ons!</p>
-        <form action="#">
+        <p> heb je vragen of gewoon wat chatten? contact ons!</p>
+        <form action="" method="post">
           <div class="input-box">
-            <input type="text" placeholder="typ hier je naam">
+            <input type="text" placeholder="typ hier je naam" name="naam">
           </div>
           <div class="input-box">
-            <input type="text" placeholder="typ hier je email">
+            <input type="text" placeholder="typ hier je email" name="email">
           </div>
           <div class="input-box message-box">
             <textarea placeholder="Stuur ons een berichtje!" name="contact ons" id="" cols="50" rows="4"></textarea>
              </div>
-        </form>
-            <button type="submit" onclick="document.location='index.php'" class="button ">verzend</button>
+             <button type="submit" name="verzenden" class="button ">verzend</button>
+            </form>
+            
 
   </div>
   </div>

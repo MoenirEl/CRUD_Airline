@@ -13,8 +13,8 @@
     <?php
     require_once 'pdo.php';
     session_start();
-    if (isset($_SESSION['name'])) {
-        if ($_SESSION['name'] == "admin" ) {
+    if (isset($_SESSION['authority'])) {
+        if ($_SESSION['authority'] == "admin" ) {
         } else{
             header("Location: ../index.php");
         }
@@ -25,7 +25,7 @@
 
     if (isset($_POST["toevoegen"])) {
         $sql = "INSERT INTO reizen (naam,kosten,StartDatum,eindDatum,manierVanReizen,klasse,Personen,reis,beschrijving) 
-    VALUES (:naam,:kosten,:startDatum,:eindDatum,:manierVanReizen,:klasse,:Personen,:reis,:beschrijving)";
+        VALUES (:naam,:kosten,:startDatum,:eindDatum,:manierVanReizen,:klasse,:Personen,:reis,:beschrijving)";
 
         $stmt = $connect->prepare($sql);
         $stmt->bindParam(":naam", $_POST['naam']);
@@ -36,7 +36,6 @@
         $stmt->bindParam(":klasse", $_POST['klasse']);
         $stmt->bindParam(":Personen", $_POST['Personen']);
         $stmt->bindParam(":reis", $_POST['reis']);
-        $stmt->bindParam(":eindDatum", $_POST['eindDatum']);
         $stmt->bindParam(":beschrijving", $_POST['beschrijving']);
         $stmt->execute();
         header("Location: ../admin.php");
