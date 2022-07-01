@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,15 +17,17 @@
     if (isset($_SESSION['authority'])) {
         if ($_SESSION['authority'] == "user" || $_SESSION['authority'] == "user") {
             echo "hallo daar " . $_SESSION["name"];
-        } else {
+        } else{
             header("Location: index.php");
         }
+    }
+    else {
+        header("Location: index.php");
     }
     $sql = "SELECT * FROM boekingen WHERE gebruikerID = :ID";
     $stmt = $connect->prepare($sql);
     $stmt->execute([':ID' => $_SESSION['id']]);
     $result = $stmt->fetchAll();
-
     foreach ($result as $re) {
         echo $re["boekingID"];
         echo $re["gebruikerID"];

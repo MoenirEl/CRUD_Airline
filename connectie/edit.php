@@ -13,8 +13,8 @@
     <?php
     require_once "pdo.php";
     session_start();
-    if (isset($_SESSION['name'])) {
-        if ($_SESSION['name'] == "admin" ) {
+    if (isset($_SESSION['authority'])) {
+        if ($_SESSION['authority'] == "admin" ) {
         } else{
             header("Location: index.php");
         }
