@@ -10,7 +10,7 @@
 body {
   min-height: 100vh;
   width: 100%;
-  background: #282E2E;
+  background: #c5e3e3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,7 @@ body {
 
 .container {
   width: 85%;
-  background: #000;
+  background: rgb(244, 228, 228);
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -49,7 +49,7 @@ body {
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
-  background: #afafb6;
+  background: #505058;
 }
 
 .content .left-side .details {
@@ -59,21 +59,20 @@ body {
 
 .content .left-side .details i {
   font-size: 30px;
-  color: #B1A5D3;
+  color: #6d48d4;
   margin-bottom: 10px;
 }
 
 .content .left-side .details .topic {
   font-size: 18px;
   font-weight: 500;
-  color: 
-  #E9E9E9;
+  color: #484646;
 }
 
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
   font-size: 14px;
-  color: #DFDFE1;
+  color: #343438;
 }
 
 .container .content .right-side {
@@ -84,7 +83,7 @@ body {
 .content .right-side .topic-text {
   font-size: 23px;
   font-weight: 600;
-  color: #b1a5d3;
+  color: #6640cf;
 }
 
 .right-side .input-box {
@@ -100,7 +99,7 @@ body {
   border: none;
   outline: none;
   font-size: 16px;
-  background: #303031;
+  background: white;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
@@ -133,6 +132,10 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+input{
+  position: relative;
 }
 
 @media (max-width: 950px) {
