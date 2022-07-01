@@ -38,7 +38,6 @@
                 } 
                 if (isset($_SESSION['name'])) {
                     echo '<a href="/CRUD_Space/user/user.php">Mijn account</a>';
-                    echo '<a href="/CRUD_Space/user/boeking.php"> boeking </a>';
                     echo '<a href="connectie/sessionD.php">Uitloggen</a>';
                 }
                 ?>

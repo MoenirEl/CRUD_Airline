@@ -15,10 +15,12 @@ body {
     background-color: black;
     color: white;
 }
-.welkom{
+
+.welkom {
     font-size: 30px;
 }
-label{
+
+label {
     font-size: 18px;
 }
 
@@ -57,7 +59,7 @@ form {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    border-radius: 10px, 10px ;
+    border-radius: 10px, 10px;
     height: 50%;
     width: 50%;
     background-color: rgb(18, 111, 111);
@@ -77,6 +79,7 @@ button[type=submit] {
     transition-duration: 0.4s;
     cursor: pointer;
 }
+
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -85,7 +88,7 @@ input[type=text] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
 
 .white_space {
     display: flex;
@@ -114,14 +117,41 @@ input[type=text] {
     align-self: flex-start;
     justify-content: space-evenly;
     height: 40%;
-    width: 50%;
-
+    width: 100%;
 }
-@media only screen and (max-width: 429px){
-  .welkom{
-    font-size: 20px;
-  }
-  label{
-    font-size: 15px;
-  }
+
+.blok {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    color: black;
+    background-color:rgb(98, 219, 219) ;
+    font-size: 17px;
+    height: 50%;
+    width: 25%;
+}
+
+.red {
+    border-color: red;
+    border: 2px;
+    border-style: solid;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.red:hover {
+    background-color: red;
+    color: black;
+}
+
+@media only screen and (max-width: 429px) {
+    .welkom {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 15px;
+    }
 }

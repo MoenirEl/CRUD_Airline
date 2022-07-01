@@ -7,11 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/afrekenen.css">
 </head>
-<body>
-    <div id="bg" ></div>
-    <div class="zien" >
+<body>     
+        <div id="bg" ></div>
+    <div class="container" >
+    <div class="white_space"></div>
+        <div class="up_side"></div>
+        <div class="white_space"></div>
+        <div class="white_space_small"></div>
+        <div class="midblok">
 
-        <?php
+     <?php
     require_once "connectie/pdo.php";
     session_start();
     if (isset($_POST["verzenden"])) {
@@ -35,15 +40,37 @@ $result = $stmt->fetchAll();
 } elseif (isset($_POST['check'])) {
     
 }
+
 ?>
-    <?php foreach ($result as $re) {
-        echo $re['naam'];
-    }
-    ?>
+<div class="text" >
+        <?php foreach ($result as $re) {?>
+            <?php echo "bedankt voor het reizen met spacery. u gaat van " 
+            . $re['naam'] 
+            . " naar " 
+            . $re['naarnaam'] 
+            . " u vertrekt op " 
+            . $re['startDatum'] 
+            . " en u heeft gekozen voor " 
+            . $re['manierVanReizen'] 
+            ." met " 
+            . $re['Personen'] 
+            ." person(en)"?>
+<?php
+}
+?>
+
+    
     </div>
-    <form action="" method="post">
-        <button name="check"></button>
-    </form>
+    <div class="button">
+        <button onclick="document.location='index.php'" >afrekenen</button>
+    </div>
+</div>
+<div class="white_space_small"></div>
+        <div class="white_space_small2"></div>
+        <div class="bottom_side"></div>
+        <div class="white_space_small2"> </div>
+    </div>
+
 
 
     <script type="text/javascript" src="js/particles.min.js" ></script>

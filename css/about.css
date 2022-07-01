@@ -62,6 +62,24 @@
 #reviews{
   position: relative;
 }
+.reveiws{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  height: auto;
+  width: 50%;
+}
+button{
+  position: relative;
+}
+.blok{
+display: flex;
+position: relative;
+color:black ;
+background-color: white;
+height: 100px;
+width: 200px;
+}
 
 /* .space {
   width: 100%;
@@ -80,13 +98,13 @@
   background-color: black;
 
   } */
-#bg {
+ #bg {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-}
+} 
 @media only screen and (max-width: 769px){
   
 }
