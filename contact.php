@@ -58,7 +58,6 @@
              </div>
              <button type="submit" name="verzenden" class="button ">verzend</button>
             </form>
-            
 
   </div>
   </div>
