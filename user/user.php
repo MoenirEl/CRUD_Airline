@@ -57,9 +57,9 @@
             ?>
         </div>
         <div class="white_space_small"></div>
-        <div class="white_space_small2"></div>
+
         <div class="bottom_side"></div>
-        <div class="white_space_small2"> </div>
+
 
     </div>
     <script type="text/javascript" src="../js/particles.min.js"></script>
