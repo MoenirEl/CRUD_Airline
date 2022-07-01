@@ -10,14 +10,13 @@
 </head>
 
 <body class="sky">
-    <a class="green" href="connectie/insert.php">insert </a>
     <a class="blue" href="../CRUD_Space/index.php">home</a>
     <?php
 require_once "connectie/pdo.php";
 session_start();
 echo "welkom terug " . $_SESSION["name"];
 
-$sql = "SELECT * FROM reizen";
+$sql = "SELECT * FROM users";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
@@ -29,31 +28,18 @@ $result = $stmt->fetchAll();
 
         <table>
             <tr>
-                <th>planeetnaam </th>
-                <th>kosten </th>
-                <th>startdatum </th>
-                <th>einddatum </th>
-                <th>manierVanReizen </th>
-                <th>klasse </th>
-                <th>Personen </th>
-                <th>reis </th>
-                <th>beschrijving </th>
+                <th>Naam </th>
+                <th>Wachtwoord </th>
+                <th>Mail </th>
             </tr>
 
             <?php foreach ($result as $re) { ?>
                 <tr>
-                    <td><?php echo $re["naam"]; ?></td>
-                    <td><?php echo $re["kosten"]; ?></td>
-                    <td><?php echo $re["startDatum"]; ?></td>
-                    <td><?php echo $re["eindDatum"]; ?></td>
-                    <td><?php echo $re["manierVanReizen"]; ?></td>
-                    <td><?php echo $re["klasse"]; ?></td>
-                    <td><?php echo $re["Personen"]; ?></td>
-                    <td><?php echo $re["reis"]; ?></td>
-                    <td><?php echo $re["beschrijving"]; ?></td>
+                    <td><?php echo $re["username"]; ?></td>
+                    <td><?php echo $re["password"]; ?></td>
+                    <td><?php echo $re["mail"]; ?></td>
                     <td>
-                        <a class="orange" href="connectie/edit.php?id=<?php echo $re["reisID"]; ?>">edit </a>
-                        <a class="red" href="connectie/delete.php?id=<?php echo $re["reisID"]; ?>">delete </a>
+                        <a class="red" href="connectie/deleteuser.php?id=<?php echo $re["gebruikerID"]; ?>">delete </a>
                     </td>
                 </tr>
 

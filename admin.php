@@ -15,8 +15,8 @@
     <?php
 require_once "connectie/pdo.php";
 session_start();
-if (isset($_SESSION['name'])) {
-    if ($_SESSION['name'] == "admin" ) {
+if (isset($_SESSION['authority'])) {
+    if ($_SESSION['authority'] == "admin" ) {
         echo "welkom terug " . $_SESSION["name"];
     } else{
         header("Location: index.php");
@@ -51,7 +51,6 @@ $result = $stmt->fetchAll();
 
             <?php foreach ($result as $re) { ?>
                 <tr>
-                    <input type="hidden" naam="id" value="<?php echo $re['id'] ?>">
                     <td><?php echo $re["naam"]; ?></td>
                     <td><?php echo $re["kosten"]; ?></td>
                     <td><?php echo $re["startDatum"]; ?></td>

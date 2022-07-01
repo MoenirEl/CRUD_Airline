@@ -11,9 +11,9 @@ session_start();
         header("Location: ../index.php");
     }
 
-$sql = "DELETE FROM reizen WHERE reisID=:ID";
+$sql = "DELETE FROM users WHERE gebruikerID=:ID";
 $stmt = $connect ->prepare($sql);
 $stmt->bindParam(':ID', $_GET['id']);
 $stmt->execute();
-header("Location: ../admin.php")
+header("Location: ../adminoverzicht.php");
 ?>
